@@ -1,0 +1,106 @@
+.contacts-list {
+  @include margin-reset;
+  list-style: none;
+  padding: 10px 40px;
+}
+
+.contacts-list__phone {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21px;
+  color: $blue;
+  text-decoration: none;
+}
+
+.contacts-list__phone:hover,
+.contacts-list__phone:focus,
+.contacts-list__phone:active {
+  color: $brown;
+}
+
+.contacts-list__link,
+.contacts-list--footer .contacts-list__link{
+  font-size: 13px;
+  line-height: 22px;
+  color: $dark-red-brown;
+  border-bottom: 1px dashed $dark-red-brown;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.contacts-list__link:hover,
+.contacts-list__link:focus,
+.contacts-list__link:active {
+  border-bottom: 1px dashed $brown;
+  color: $brown;
+}
+
+.contacts-list__phone--footer {
+  font-size: 18px;
+  line-height: 22px;
+  margin-right: 20px;
+  padding-left: 10px;
+}
+
+.contacts-list--footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts-list--footer {
+    width: 40%;
+    justify-content: start;
+    padding: 10px;
+    min-width: none;
+  }
+
+  .contacts-list__phone--footer {
+    font-size: 21px;
+    line-height: 25px;
+    padding-left: 0;
+  }
+
+  .contacts-list__link,
+  .contacts-list--footer .contacts-list__link {
+    font-size: 15px;
+    line-height: 17px;
+  }
+}
+
+@media (min-width: $laptop-width) {
+  .contacts-list--header {
+    padding: 10px 0 10px 10px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $xlaptop-width) {
+  .contacts-list__phone--header {
+    padding-left: 45px;
+    position: relative;
+  }
+
+  .contacts-list__phone--header:before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/phone-icon.svg");
+    background-size: 11px 11px;
+    background-repeat: no-repeat;
+    background-position: top 9px left 9px;
+    background-color: $dark-red-brown;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+  }
+
+  .contacts-list__item:first-child {
+    margin-bottom: 5px;
+  }
+}

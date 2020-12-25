@@ -1,0 +1,144 @@
+.insta__title {
+  @include margin-reset;
+  font-family: Museo Cyrl, "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 47px;
+  color: $dark-blue;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.insta__image-wrapper {
+  position: relative;
+  width: 272px;
+  height: 272px;
+  background-color: rgb(115,123,144);
+}
+
+.insta__list,
+.insta__info-list {
+  @include margin-reset;
+  list-style: none;
+}
+
+.insta__list-wrapper {
+  margin: 0 auto;
+}
+
+.insta__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -10px;
+}
+
+.insta__item {
+  width: 272px;
+  height: 272px;
+  margin:0 10px 30px 10px;
+}
+
+.insta__image {
+  width: 272px;
+  display: block;
+}
+
+.insta__info-list {
+  display: none;
+}
+
+.insta__link:hover .insta__info-list,
+.insta__link:focus .insta__info-list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: transparent;
+  z-index: 2;
+  display: flex;
+}
+
+.insta__info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 28px;
+  color: $white;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.insta__info-item:nth-child(2) {
+  margin-right: 0;
+}
+
+.insta__message,
+.insta__heart {
+  margin-right: 8px;
+}
+
+.insta__message {
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/inst-message-icon.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.insta__heart {
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/inst-heart-icon.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: $tablet-width) {
+  .insta__list-wrapper {
+    width: 596px;
+    margin: 0 auto;
+  }
+  .insta__list {
+    margin-bottom: 30px;
+  }
+
+  .insta__title {
+    font-size: 45px;
+    line-height: 55px;
+  }
+
+  .insta__item {
+    margin:0 13px 30px 13px;
+  }
+}
+
+@media (min-width: 1352px) {
+  .insta {
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .insta__list-wrapper {
+    width: 1208px;
+  }
+
+  .insta__list {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .insta__title {
+    text-align: left;
+    margin-bottom: 45px;
+    padding-left: 5px;
+  }
+
+  .insta__item {
+    margin:0 15px 30px 13px;
+  }
+}

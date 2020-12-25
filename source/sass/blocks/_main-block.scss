@@ -1,0 +1,36 @@
+.main-block {
+  padding-top: 30px;
+  padding-bottom: 45px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-block {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .main-block__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $laptop-width) {
+  .main-block {
+    padding-top: 65px;
+  }
+}
+
+@media (min-width: $xlaptop-width) {
+  .main-block__wrapper {
+    display: flex;
+    justify-content: start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-block {
+    padding-bottom: 65px;
+  }
+}

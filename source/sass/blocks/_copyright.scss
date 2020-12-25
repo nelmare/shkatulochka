@@ -1,0 +1,65 @@
+.copyright {
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.copyright__text {
+  @include margin-reset;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17px;
+  color: $dark-brown;
+  padding: 10px;
+}
+
+.copyright__link {
+  color: $dark-red-brown;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17px;
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+}
+
+.copyright__link .copyright__line  {
+  position: absolute;
+  background-color: $dark-red-brown;
+  width: 254px;
+  height: 1px;
+  top: 28px;
+  left: 10px;
+  display: block;
+}
+
+.copyright__link:hover,
+.copyright__link:focus,
+.copyright__link:active {
+  color: $brown;
+}
+
+.copyright__link:hover .copyright__line,
+.copyright__link:focus .copyright__line,
+.copyright__link:active .copyright__linee  {
+  background-color: $brown;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    font-size: 15px;
+    padding: 10px 0;
+  }
+
+  .copyright__link {
+    font-size: 15px;
+    padding: 10px 0;
+  }
+
+  .copyright__link .copyright__line  {
+    width: 294px;
+    left: 0;
+  }
+}

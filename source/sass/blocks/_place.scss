@@ -1,0 +1,79 @@
+.place__list {
+  @include margin-reset;
+  list-style: none;
+}
+
+.place__item {
+  padding: 10px 0 150px 40px;
+}
+
+.place__button {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 17px;
+  color: $dark-red-brown;
+  border: none;
+  border-bottom: 1px dashed $dark-red-brown;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.place__button:hover,
+.place__button:focus,
+.place__button:active {
+  border-bottom: 1px dashed $brown;
+  color: $brown;
+}
+
+@media (min-width: $laptop-width) {
+  .place {
+    position: absolute;
+    top: -84px;
+    left: 80px;
+  }
+
+  .place__list {
+    margin-bottom: 0;
+
+  }
+
+  .place__item {
+    padding: 10px;
+  }
+
+  .place__button {
+  }
+}
+
+@media (min-width: $xlaptop-width) {
+  .place {
+    position: absolute;
+    left: 90px;
+  }
+
+  .place__item {
+    position: relative;
+    padding-left: 23px;
+  }
+
+  .place__item:before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 19px;
+    background-image: url("../img/place-icon.svg");
+    background-size: 19px 19px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .place {
+    left: 165px;
+  }
+}

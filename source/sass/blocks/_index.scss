@@ -1,0 +1,44 @@
+.index {
+  padding-top: 20px;
+  padding-bottom: 45px;
+}
+
+.index__column {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (min-width: $tablet-width) {
+  .index {
+    padding-top: 35px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: $laptop-width) {
+  .index {
+    padding-bottom: 65px;
+  }
+
+  .index__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .index__column {
+    width: 43%;
+  }
+}
+
+@media (min-width: $xlaptop-width) {
+  .index {
+    padding-top: 65px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .index__column {
+    width: 470px;
+  }
+}

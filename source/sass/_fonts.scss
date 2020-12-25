@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilroyregular.woff2") format("woff2"),
+    url("../fonts/gilroyregular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilroysemibold.woff2") format("woff2"),
+  url("../fonts/gilroysemibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilroybold.woff2") format("woff2"),
+  url("../fonts/gilroybold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Museo Cyrl";
+  src: url("../fonts/museocyrl.woff2") format("woff2"),
+    url("../fonts/museocyrl.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

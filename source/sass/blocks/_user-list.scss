@@ -1,0 +1,53 @@
+.user-list {
+  @include margin-reset;
+  list-style: none;
+}
+
+.user-list__link {
+  font: inherit;
+  color: inherit;
+  padding: 20px 40px;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+}
+
+.user-list__link .user-list__link-line {
+  position: absolute;
+  width: 160px;
+  height: 1px;
+  background-color: $dark-red-brown;
+  top: 36px;
+  left: 40px;
+  display: block;
+}
+
+.user-list__link:hover,
+.user-list__link:focus,
+.user-list__link:active {
+  color: $brown;
+}
+
+.user-list__link:hover .user-list__link-line,
+.user-list__link:focus .user-list__link-line,
+.user-list__link:active .user-list__link-line {
+  background-color: $brown;
+}
+
+@media (min-width: $laptop-width) {
+  .user-list__item--login {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .user-list__link {
+    font: inherit;
+    color: inherit;
+    padding: 20px 0 10px 10px;
+  }
+
+  .user-list__link .user-list__link-line {
+    left: 10px;
+  }
+}
