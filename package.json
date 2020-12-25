@@ -1,5 +1,5 @@
 {
-  "name": "cat-energy-19",
+  "name": "shkatulochka",
   "version": "17.0.0",
   "private": true,
   "description": "Shkatulka",
@@ -49,7 +49,7 @@
     "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
-    "node": "8.16"
+    "node": "15.4"
   },
   "dependencies": {
     "del": "^5.1.0",
