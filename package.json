@@ -22,7 +22,7 @@
     "gulp-svgstore": "^7.0.1",
     "gulp-uglify": "^3.0.2",
     "gulp-webp": "^4.0.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "5.0",
     "normalize.scss": "^0.1.0",
     "posthtml-include": "^1.4.3",
     "stylelint": "10.1.x",
@@ -53,7 +53,6 @@
   },
   "dependencies": {
     "del": "^5.1.0",
-    "express": "^4.17.1",
-    "node-sass": "^4.14.1"
+    "express": "^4.17.1"
   }
 }
