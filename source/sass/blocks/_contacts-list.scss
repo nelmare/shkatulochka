@@ -52,7 +52,7 @@
 @media (min-width: $tablet-width) {
   .contacts-list--footer {
     width: 40%;
-    justify-content: start;
+    justify-content: flex-start;
     padding: 10px;
     min-width: none;
   }
