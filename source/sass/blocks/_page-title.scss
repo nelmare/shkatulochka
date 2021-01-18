@@ -1,0 +1,59 @@
+.page-title {
+  @include margin-reset;
+  font-family: Museo Cyrl, "Arial", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 36px;
+  color: $white;
+  text-align: left;
+  height: 40vw;
+  padding: 0 0 50px 20px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.page-title--about {
+  background-image: url("../img/about-title.jpg");
+  background-color: rgb(160,167,183);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.page-title--news {
+  background-image: url("../img/news-title.jpg");
+  background-color: rgb(160,167,183);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .page-title {
+    height: 400px;
+    padding: 0 0 115px 90px;
+    font-size: 55px;
+  }
+}
+
+@media (min-width: $laptop-width) {
+  .page-title {
+    height: 435px;
+    font-size: 75px;
+  }
+}
+
+@media (min-width: $xlaptop-width) {
+  .page-title {
+    height: 610px;
+    font-size: 95px;
+    padding: 0 0 180px 90px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-title {
+    padding: 0 0 180px 165px;
+    font-size: 110px;
+  }
+}

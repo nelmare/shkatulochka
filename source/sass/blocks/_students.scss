@@ -1,0 +1,140 @@
+.students {
+  padding: 20px 0 35px 0;
+}
+
+.students__list {
+  display: flex;
+  justify-content: flex-start;
+  //flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.students__item {
+  @include margin-reset;
+  padding-left: 70px;
+  margin-bottom: 20px;
+  min-height: 50px;
+}
+
+.students__item:before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.students__item--1:before {
+  background-image: url("../img/business-icon.svg");
+}
+
+.students__item--2:before {
+  background-image: url("../img/maternity-icon.svg");
+}
+
+.students__item--3:before {
+  background-image: url("../img/creativity-icon.svg");
+}
+
+.students__item--4:before {
+  background-image: url("../img/interests-icon.svg");
+}
+
+.students__item--5:before {
+  background-image: url("../img/leader-icon.svg");
+}
+
+.students__item--6:before {
+  background-image: url("../img/heart-box-icon.svg");
+}
+
+.students__text {
+  @include margin-reset;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  color: $dark-red-brown;
+  text-align: center;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.students__text:before {
+  content: "";
+  background-image: url("../img/heart-list.svg");
+  display: inline-block;
+  width: 60px;
+  height: 45px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 620px) {
+  .students__item {
+    max-width: 47%;
+    margin-right: 30px;
+  }
+
+  .students__item:nth-child(2n+2) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .students {
+    padding: 25px 0 60px 0;
+  }
+
+  .students__list {
+    justify-content: space-between;
+  }
+
+  .students__item {
+    width: 30%;
+    padding-left: 0;
+    padding-top: 70px;
+    min-height: auto;
+    margin-right: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .students__item:nth-child(2n+2) {
+    margin-right: 20px;
+  }
+
+  .students__item:nth-child(3n+3) {
+    margin-right: 0;
+  }
+
+  .students__item:before {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $laptop-width) {
+  .students {
+    padding: 30px 0 65px 0;
+  }
+
+  .students__item {
+    padding-top: 90px;
+  }
+
+  .students__item:before {
+    width: 70px;
+    height: 70px;
+  }
+}

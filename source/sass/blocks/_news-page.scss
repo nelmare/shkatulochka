@@ -1,0 +1,16 @@
+.news-page {
+  padding-top: 30px;
+}
+
+.news-page__list {
+  @include margin-reset;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.news-page__card {
+  margin-bottom: 30px;
+}

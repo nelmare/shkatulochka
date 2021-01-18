@@ -98,7 +98,8 @@ gulp.task("server", function () {
     notify: false,
     open: true,
     cors: true,
-    ui: false
+    ui: false,
+    online: true
   });
 
   gulp.watch("source/sass/**/*.scss", gulp.series("css", "refresh"));
