@@ -1,32 +1,61 @@
-NodeList.prototype.forEach = Array.prototype.forEach;
-var filterMainList = document.querySelector('.filter__main-list');
-var filterMainToggle = document.querySelector('.filter__title');
-var filterList = document.querySelectorAll('.filter__list');
-var filterToggle = document.querySelector('.filter__link-item');
+$(function () {
+  let $filterMainList = $('.filter__main-list');
+  let $filterMainToggle = $('.filter__title');
+  let $filterList = $('.filter__list');
+  let $filterToggle = $('.filter__link-item');
 
-filterMainList.classList.remove('filter__list--nojs');
-filterMainToggle.classList.remove('filter__toggle--nojs');
-filterList.forEach(function(el) {
-  el.classList.remove('filter__list--nojs');
+  $filterMainList
+    .removeClass('filter__list--nojs')
+    .addClass('filter--closed');
+
+  $filterMainToggle
+    .removeClass('filter__toggle--nojs')
+    .addClass('filter__main-toggle--open');
+
+  $filterList
+    .removeClass('filter__list--nojs')
+    .removeClass('filter--closed')
+    .addClass('filter--open');
+
+  $filterToggle
+    .removeClass('filter__toggle--nojs')
+    .removeClass('filter__toggle--closed')
+    .addClass('filter__toggle--open');
+
+  $filterMainToggle.on('click', function (e) {
+    $filterMainList
+      .toggleClass('filter--closed')
+      .toggleClass('filter--open');
+
+    $filterList
+      .addClass('filter--closed')
+      .removeClass('filter--open');
+
+    $filterMainToggle
+      .toggleClass('filter__main-toggle--open')
+      .toggleClass('filter__main-toggle--closed');
+
+    $filterToggle
+      .removeClass('filter__toggle--closed')
+      .addClass('filter__toggle--open');
+
+    return false;
+  })
+
+  $filterToggle.on('click', function (e) {
+    e.preventDefault();
+    console.log('$filterToggle')
+
+    let $closestFilter = $(this).siblings('.filter__list');
+
+    $closestFilter
+      .toggleClass('filter--closed')
+      .toggleClass('filter--open');
+
+    $filterToggle
+      .toggleClass('filter__toggle--open')
+      .toggleClass('filter__toggle--closed');
+
+    return false;
+  })
 })
-filterToggle.classList.remove('filter__toggle--nojs');
-filterMainToggle.classList.add('filter__main-toggle--open');
-filterMainList.classList.add('filter--closed');
-filterToggle.classList.add('filter__toggle--open');
-filterList.forEach(function(el) {
-  el.classList.add('filter--closed');
-})
-
-filterMainToggle.addEventListener('click', function () {
-  filterMainList.classList.toggle('filter--closed');
-  filterMainList.classList.toggle('filter--open');
-  filterMainToggle.classList.toggle('filter__main-toggle--open');
-  filterMainToggle.classList.toggle('filter__main-toggle--closed');
-});
-
-filterToggle.addEventListener('click', function () {
-  filterList.classList.toggle('filter--closed');
-  filterList.classList.toggle('filter--open');
-  filterToggle.classList.toggle('filter__toggle--open');
-  filterToggle.classList.toggle('filter__toggle--closed');
-});
