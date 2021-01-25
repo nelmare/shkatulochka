@@ -1,0 +1,179 @@
+.price__form {
+  padding: 15px;
+}
+
+.price__wrapper {
+  border: none;
+  padding: 0;
+}
+
+
+//.filter-item {
+//  position: relative;
+//
+//  font: inherit;
+//  font-weight: 400;
+//
+//  margin-bottom: 24px;
+//}
+//
+//.filter-item label {
+//  display: inline-block;
+//  vertical-align: middle;
+//
+//  padding-left: 40px;
+//
+//  text-align: left;
+//}
+//
+//
+//.filter-input-checkbox:checked ~ .checkbox-on {
+//  display: inline-block;
+//  vertical-align: middle;
+//
+//  position: absolute;
+//
+//  width: 27px;
+//  height: 23px;
+//
+//  left: 0px;
+//  cursor: pointer;
+//}
+//
+//.filter-input-checkbox:checked ~ .checkbox-off {
+//  display: none;
+//}
+//
+//.filter-input-checkbox ~ .checkbox-on {
+//  display: none;
+//}
+//
+//.filter-input-checkbox ~ .checkbox-off {
+//  display: inline-block;
+//  vertical-align: middle;
+//
+//  position: absolute;
+//
+//  width: 23px;
+//  height: 23px;
+//
+//  left: 0px;
+//  cursor: pointer;
+//}
+//
+//.checkbox input[type="checkbox"]:focus + .checkbox-on,
+//.checkbox input[type="checkbox"]:focus ~ .checkbox-off {
+//  outline: thin dotted;
+//  outline: 5px auto -webkit-focus-ring-color;
+//}
+//
+//.checkbox .filter-input-checkbox:disabled ~ .checkbox-off,
+//.checkbox .filter-input-checkbox:checked:disabled ~ .checkbox-on {
+//  fill: #6a6a6a;
+//}
+
+
+.price__marks {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price__marks label {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 33px;
+  cursor: pointer;
+  width: 40%;
+}
+
+.price__marks .price__min,
+.price__marks .price__max {
+  width: 90px;
+  //padding-left: 65px;
+}
+
+.price__marks .price__max {
+  //padding-left: 54px;
+}
+
+.price__marks input {
+  width: 100%;
+  min-height: 32px;
+
+  margin: 0;
+  padding: 10px;
+
+  font: inherit;
+  color: inherit;
+
+  border: 1px solid $grey;
+  background: none;
+}
+
+.price__marks span {
+  display: inline-block;
+  vertical-align: middle;
+
+  height: 2px;
+  width: 22px;
+
+  margin-top: 5px;
+  margin-left: 1px;
+
+  background: $grey;
+}
+
+.price__range {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.price__line-grey {
+  height: 2px;
+  background: $grey;
+}
+
+.price__line-white {
+  width: 80%;
+  height: 2px;
+  background: $pink;
+}
+
+.price__circle {
+  position: absolute;
+  top: -9px;
+  width: 20px;
+  height: 20px;
+  background: $white;
+  border: 1px solid $grey;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.price__circle:hover {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 9px solid #ffffff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+.price__circle--left {
+  left: 0;
+}
+
+.price__circle--right {
+  left: 80%;
+}

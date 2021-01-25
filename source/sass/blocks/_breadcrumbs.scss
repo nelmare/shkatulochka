@@ -1,0 +1,36 @@
+.breadcrumbs {
+  margin-bottom: 20px;
+}
+
+.breadcrumbs__list {
+  @include margin-reset;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.breadcrumbs__item {
+  margin-bottom: 10px;
+}
+
+.breadcrumbs__link {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 18px;
+  color: inherit;
+  text-decoration: none;
+  text-transform: none;
+  cursor: pointer;
+}
+
+.breadcrumbs__slash {
+  margin: 0 5px;
+  color: $red;
+}
+
+@media (min-width: $desktop-width) {
+  .breadcrumbs {
+    margin-bottom: 15px;
+  }
+}

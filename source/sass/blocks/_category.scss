@@ -1,0 +1,33 @@
+.category__label {
+  padding-left: 30px;
+  text-align: left;
+  position: relative;
+  cursor: pointer;
+}
+
+.category__check {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  cursor: pointer;
+  transform: translateY(-50%);
+  border: 1px solid $grey;
+  border-radius: 2px;
+}
+
+.category__checkbox:checked + .category__check {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/icon-check-square.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  cursor: pointer;
+  transform: translateY(-50%);
+  border: none;
+}

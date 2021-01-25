@@ -1,0 +1,113 @@
+.allcourses {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.allcourses__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-right: -20px;
+  margin-left: -20px;
+}
+
+.allcourses__item {
+  width: 255px;
+  height: 175px;
+  background-color: rgb(160,167,183);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: $white;
+  font-family: Museo Cyrl, "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 33px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 20px 30px 20px;
+  position: relative;
+}
+
+.allcourses__link {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: auto;
+  content: "";
+  background-color: rgba(0,0,0,0);
+}
+
+.allcourses__item--1 {
+  background-image: url("../img/courses1.jpg");
+}
+
+.allcourses__item--2 {
+  background-image: url("../img/courses2.jpg");
+}
+
+.allcourses__item--3 {
+  background-image: url("../img/courses3.jpg");
+}
+
+.allcourses__item--4 {
+  background-image: url("../img/courses4.jpg");
+}
+
+.allcourses__item--5 {
+  background-image: url("../img/courses5.jpg");
+}
+
+.allcourses__item--6 {
+  background-image: url("../img/courses6.jpg");
+}
+
+.allcourses__item--7 {
+  background-image: url("../img/courses7.jpg");
+}
+
+.allcourses__item--8 {
+  background-image: url("../img/courses8.jpg");
+}
+
+.allcourses__text {
+  @include margin-reset;
+  font-size: 13px;
+  line-height: 22px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $laptop-width) {
+  .allcourses__list {
+    justify-content: flex-start;
+  }
+
+  .allcourses__text {
+    font-size: 15px;
+    line-height: 26px;
+  }
+}
+
+@media (min-width: $xlaptop-width) {
+  .allcourses__text {
+    font-size: 17px;
+    line-height: 27px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .allcourses__text {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+

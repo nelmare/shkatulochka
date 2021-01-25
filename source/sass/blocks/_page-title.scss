@@ -10,22 +10,26 @@
   padding: 0 0 50px 20px;
   display: flex;
   align-items: flex-end;
+  background-color: rgb(160,167,183);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .page-title--about {
   background-image: url("../img/about-title.jpg");
-  background-color: rgb(160,167,183);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
 }
 
 .page-title--news {
   background-image: url("../img/news-title.jpg");
-  background-color: rgb(160,167,183);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+}
+
+.page-title--courses {
+  background-image: url("../img/courses-title.jpg");
+}
+
+.page-title--wetfelting {
+  background-image: url("../img/courses-title2.jpg");
 }
 
 @media (min-width: $tablet-width) {
@@ -55,5 +59,7 @@
   .page-title {
     padding: 0 0 180px 165px;
     font-size: 110px;
+    max-width: 1500px;
+    margin: 0 auto;
   }
 }

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Shkatulochka</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="js/picturefill.js"></script>
+  <script src="js/svg4everybody.js"></script>
+</head>
+<body class="">
+<div style="display:none">
+  <include src="build/img/sprite.svg"></include>
+</div>
+<header class="page-header">
+  <div class="page-header__container container">
+    <div class="page-header__logo-wrapper">
+      <a class="page-header__logo" href="index2.html">
+        <picture>
+          <source media="(min-width: 1500px)" srcset="/img/logo-header-desktop@1x.png, /img/logo-header-desktop@2x.png 2x">
+          <source media="(min-width: 992px)" srcset="/img/logo-header-mobile2@1x.png, /img/logo-header-mobile2@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="/img/logo-header-desktop@1x.png, /img/logo-header-desktop@2x.png 2x">
+          <img class="page-header__logo-image" src="/img/logo-header-mobile2@1x.png" srcset="/img/logo-header-mobile2@2x.png 2x"
+               alt="Логотип Шкатулочки">
+        </picture>
+      </a>
+      <a href="index2.html" class="page-header__title page-header__title--variant">Онлайн-школа современного войлока</a>
+    </div>
+  </div>
+  <nav class="main-nav container">
+    <button class="main-nav__toggle main-nav__toggle--nojs" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <ul class="main-nav__list main-nav__list--nojs site-list">
+      <li class="main-nav__item">
+        <ul class="site-list__wrapper">
+          <li class="site-list__item site-list__item--menu">
+            <a class="site-list__link" href="index2.html">Главная</a>
+          </li>
+          <li class="site-list__item site-list__item--menu">
+            <a class="site-list__link" href="about.html">О нас</a>
+          </li>
+          <li class="site-list__item site-list__item--menu">
+            <a class="site-list__link" href="news.html">Новости</a>
+          </li>
+          <li class="site-list__item site-list__item--menu">
+            <a class="site-list__link site-list__link--active" href="#">Курсы</a>
+            <ul class="site-list__menu-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="courses.html">Все курсы</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="wetfelting.html">Мокрое валяние</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="dryfelting.html">Сухое валяние</a>
+              </li>
+            </ul>
+          </li>
+          <li class="site-list__item site-list__item--menu">
+            <a class="site-list__link" href="teachers.html">Преподаватели</a>
+          </li>
+          <li class="site-list__item site-list__item--menu">
+            <a class="site-list__link" href="usefull.html">Полезности</a>
+          </li>
+          <li class="site-list__item site-list__item--menu">
+            <a class="site-list__link" href="free.html">Бесплатно</a>
+          </li>
+          <li class="site-list__item site-list__item--menu">
+            <a class="site-list__link" href="reviews.html">Отзывы</a>
+          </li>
+          <li class="site-list__item site-list__item--menu">
+            <a class="site-list__link" href="contacts.html">Контакты</a>
+          </li>
+          <li class="site-list__item site-list__item--user">
+            <ul class="user-list">
+              <li class="user-list__item user-list__item--login">
+                <a href="#" class="user-list__link user-list__link--login">
+                  <span class="user-list__link-line"></span>Вход в личный кабинет
+                </a>
+              </li>
+              <li class="user-list__item user-list__item--contacts">
+                <ul class="contacts-list contacts-list--header">
+                  <li class="contacts-list__item">
+                    <a class="contacts-list__phone contacts-list__phone--header" href="tel:+7-985-480-77-40">8-985-480-77-40</a>
+                  </li>
+                  <li class="contacts-list__item">
+                    <a class="contacts-list__link" href="#">Заказать звонок</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="site-list__item place">
+            <ul class="place__list">
+              <li class="place__item">
+                <button class="place__button" type="button">Москва</button>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <h1 class="page-title page-title--wetfelting">Мокрое валяние</h1>
+  <div class="courses container">
+    <div class="courses__breadcrumbs breadcrumbs">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="index2.html">Главная</a>
+        </li>
+        <li class="breadcrumbs__item breadcrumbs__item--slash">
+          <span class="breadcrumbs__slash">/</span>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="courses.html">Курсы</a>
+        </li>
+        <li class="breadcrumbs__item breadcrumbs__item--slash">
+          <span class="breadcrumbs__slash">/</span>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="wetfelting.html">Мокрое валяние</a>
+        </li>
+      </ul>
+    </div>
+    <div class="courses__searching">
+      <div class="courses__filter filter">
+          <a class="filter__title filter__toggle--nojs" href="#">Фильтр</a>
+          <ul class="filter__main-list list filter__list--nojs">
+            <li class="filter__item category list__item">
+              <a class="filter__link-item category__link-item filter__toggle--nojs">Изделие</a>
+              <ul class="filter__list category__list list filter__list--nojs">
+                <li class="filter__list-item category__item list__item">
+                  <label class="filter__label category__label" for="category1">Банные шапки
+                    <input class="category__checkbox visually-hidden" type="checkbox" id="category1">
+                    <span class="category__check"></span>
+                  </label>
+                </li>
+                <li class="filter__list-item category__item list__item">
+                  <label class="filter__label category__label" for="category2">Варежки, миттенки
+                    <input class="category__checkbox visually-hidden" type="checkbox" id="category2">
+                    <span class="category__check"></span>
+                  </label>
+                </li>
+                <li class="filter__list-item category__item list__item">
+                  <label class="filter__label category__label" for="category3">Игрушки
+                    <input class="category__checkbox visually-hidden" type="checkbox" id="category3">
+                    <span class="category__check"></span>
+                  </label>
+                </li>
+                <li class="filter__list-item category__item list__item">
+                  <label class="filter__label category__label" for="category4">Легкий старт
+                    <input class="category__checkbox visually-hidden" type="checkbox" id="category4">
+                    <span class="category__check"></span>
+                  </label>
+                </li>
+                <li class="filter__list-item category__item list__item">
+                  <label class="category__label" for="category5">Платье
+                    <input class="category__checkbox visually-hidden" type="checkbox" id="category5">
+                    <span class="category__check"></span>
+                  </label>
+                </li>
+                <li class="filter__list-item category__item list__item">
+                  <label class="category__label" for="category6">Украшение
+                    <input class="category__checkbox visually-hidden" type="checkbox" id="category6">
+                    <span class="category__check"></span>
+                  </label>
+                </li>
+                <li class="filter__list-item category__item list__item">
+                  <label class="category__label" for="category7">Шарфы
+                    <input class="category__checkbox visually-hidden" type="checkbox" id="category7">
+                    <span class="category__check"></span>
+                  </label>
+                </li>
+              </ul>
+            </li>
+            <li class="filter__item price list__item">
+              <a class="filter__link-item price__link-item filter__toggle--nojs">Цена</a>
+              <form class="filter__list price__form filter__list--nojs">
+                <fieldset class="price__wrapper">
+                  <div class="price__range">
+                    <div class="price__line-grey">
+                      <div class="price__line-white"></div>
+                    </div>
+                    <div>
+                      <div class="price__circle price__circle--left"></div>
+                      <div class="price__circle price__circle--right"></div>
+                    </div>
+                  </div>
+                  <div class="price__marks">
+                    <label class="price__min">
+                      <input type="text" name="min-price" value="750" placeholder="750">
+                    </label>
+                    <span class="price__line"></span>
+                    <label class="price__max">
+                      <input type="text" name="max-price" value="4900" placeholder="4900">
+                    </label>
+                    <button class="price__button" type="submit">Ок</button>
+                  </div>
+                </fieldset>
+              </form>
+            </li>
+            <li class="filter__item level list__item">
+              <a class="filter__link-item level__link-item filter__toggle--nojs">Уровень сложности</a>
+              <ul class="filter__list level__list list filter__list--nojs">
+                <li class="filter__list-item level__item list__item">
+                 <a class="filter__link" href="#">1 - Новичок</a>
+                </li>
+                <li class="filter__list-item level__item list__item">
+                  <a class="filter__link" href="#">2 - Средний</a>
+                </li>
+                <li class="filter__list-item level__item list__item">
+                  <a class="filter__link" href="#">3 - Мастер</a>
+                </li>
+              </ul>
+            </li>
+            <li class="filter__item teachers-filter list__item">
+              <a class="filter__link-item teachers-filter__link-item filter__toggle--nojs">Преподаватель</a>
+              <ul class="filter__list teachers-filter__list list filter__list--nojs">
+                <li class="filter__list-item teachers-filter__item list__tem">
+                  <a class="filter__link" href="#">Байба Редере</a>
+                </li>
+                <li class="filter__list-item teachers-filter__item list-item list__item">
+                  <a class="filter__link" href="#">Елена Дол</a>
+                </li>
+                <li class="filter__list-item teachers-filter__item list__item">
+                  <a class="filter__link" href="#">Елена Рагулина</a>
+                </li>
+                <li class="filter__list-item teachers-filter__item list__item">
+                  <a class="filter__link" href="#">Ирина Полубояринова</a>
+                </li>
+                <li class="filter__list-item teachers-filter__item list__item">
+                  <a class="filter__link" href="#">Ольга Демьянова</a>
+                </li>
+                <li class="filter__list-item teachers-filter__item list__item">
+                  <a class="filter__link" href="#">Наталья Смольянинова</a>
+                </li>
+              </ul>
+            </li>
+            <li class="filter__button-wrapper">
+              <button class="filter__button" type="submit">Применить</button>
+              <button class="filter__clear" type="button">Сбросить фильтр</button>
+            </li>
+          </ul>
+
+        </div>
+        <div class="courses__searching-wrapper">
+          <form class="courses__searching-form" method="get" action="#">
+            <label class="visually-hidden" for="search">Поиск</label>
+            <input class="courses__searching-field" type="text" name="search" id="search" placeholder="Поиск">
+            <button class="courses__searching-button" type="submit" aria-label="Найти"></button>
+          </form>
+          <div class="courses__sorting sorting">
+            <select class="sorting__select">
+              <option selected>Сортировка: по умолчанию</option>
+              <option value="1">По возрастанию цены</option>
+              <option value="2">По убыванию цены</option>
+              <option value="3">Название: A-Я</option>
+              <option value="4">Название: A-Я</option>
+              <option value="5">Сначала новые</option>
+              <option value="6">Сначала старые</option>
+            </select>
+          </div>
+        </div>
+    </div>
+    <div class="courses__catalog catalog">
+    <section class="catalog__card catalog-item">
+      <div class="catalog-item__image-wrapper">
+        <picture>
+          <source type="image/webp" srcset="/img/index-image@1x.webp 1x, /img/index-image@2x.webp 2x">
+          <img class="catalog-item__image" src="/img/index-image@1x.jpg" srcset="/img/index-image@2x.jpg 2x"
+               alt="Фото курса по валянию">
+        </picture>
+      </div>
+      <h2 class="catalog-item__title">Легкое платье "Когда двое встречаются"</h2>
+      <p class="catalog-item__about">Легкое платье из префельта на шёлке</p>
+      <div class="catalog-item__teacher">
+        <span class="catalog-item__teacher-title">Преподаватель:</span>
+        <span class="catalog-item__teacher-name">Байба Редере</span>
+      </div>
+      <div class="catalog-item__level">
+        <span class="catalog-item__level-title">Уровень сложности:</span>
+        <span class="catalog-item__level-type">мастер</span>
+      </div>
+      <p class="catalog-item__cost">4400 p.</p>
+    </section>
+      <section class="catalog__card catalog-item">
+        <div class="catalog-item__image-wrapper">
+          <picture>
+            <source type="image/webp" srcset="/img/index-image@1x.webp 1x, /img/index-image@2x.webp 2x">
+            <img class="catalog-item__image" src="/img/index-image@1x.jpg" srcset="/img/index-image@2x.jpg 2x"
+                 alt="Фото курса по валянию">
+          </picture>
+        </div>
+        <h2 class="catalog-item__title">Легкое платье "Когда двое встречаются"</h2>
+        <p class="catalog-item__about">Легкое платье из префельта на шёлке</p>
+        <div class="catalog-item__teacher">
+          <span class="catalog-item__teacher-title">Преподаватель:</span>
+          <span class="catalog-item__teacher-name">Байба Редере</span>
+        </div>
+        <div class="catalog-item__level">
+          <span class="catalog-item__level-title">Уровень сложности:</span>
+          <span class="catalog-item__level-type">мастер</span>
+        </div>
+        <p class="catalog-item__cost">4400 p.</p>
+      </section>
+      <section class="catalog__card catalog-item">
+        <div class="catalog-item__image-wrapper">
+          <picture>
+            <source type="image/webp" srcset="/img/index-image@1x.webp 1x, /img/index-image@2x.webp 2x">
+            <img class="catalog-item__image" src="/img/index-image@1x.jpg" srcset="/img/index-image@2x.jpg 2x"
+                 alt="Фото курса по валянию">
+          </picture>
+        </div>
+        <h2 class="catalog-item__title">Легкое платье "Когда двое встречаются"</h2>
+        <p class="catalog-item__about">Легкое платье из префельта на шёлке</p>
+        <div class="catalog-item__teacher">
+          <span class="catalog-item__teacher-title">Преподаватель:</span>
+          <span class="catalog-item__teacher-name">Байба Редере</span>
+        </div>
+        <div class="catalog-item__level">
+          <span class="catalog-item__level-title">Уровень сложности:</span>
+          <span class="catalog-item__level-type">мастер</span>
+        </div>
+        <p class="catalog-item__cost">4400 p.</p>
+      </section>
+      <section class="catalog__card catalog-item">
+        <div class="catalog-item__image-wrapper">
+          <picture>
+            <source type="image/webp" srcset="/img/index-image@1x.webp 1x, /img/index-image@2x.webp 2x">
+            <img class="catalog-item__image" src="/img/index-image@1x.jpg" srcset="/img/index-image@2x.jpg 2x"
+                 alt="Фото курса по валянию">
+          </picture>
+        </div>
+        <h2 class="catalog-item__title">Легкое платье "Когда двое встречаются"</h2>
+        <p class="catalog-item__about">Легкое платье из префельта на шёлке</p>
+        <div class="catalog-item__teacher">
+          <span class="catalog-item__teacher-title">Преподаватель:</span>
+          <span class="catalog-item__teacher-name">Байба Редере</span>
+        </div>
+        <div class="catalog-item__level">
+          <span class="catalog-item__level-title">Уровень сложности:</span>
+          <span class="catalog-item__level-type">мастер</span>
+        </div>
+        <p class="catalog-item__cost">4400 p.</p>
+      </section>
+      <section class="catalog__card catalog-item">
+        <div class="catalog-item__image-wrapper">
+          <picture>
+            <source type="image/webp" srcset="/img/index-image@1x.webp 1x, /img/index-image@2x.webp 2x">
+            <img class="catalog-item__image" src="/img/index-image@1x.jpg" srcset="/img/index-image@2x.jpg 2x"
+                 alt="Фото курса по валянию">
+          </picture>
+        </div>
+        <h2 class="catalog-item__title">Легкое платье "Когда двое встречаются"</h2>
+        <p class="catalog-item__about">Легкое платье из префельта на шёлке</p>
+        <div class="catalog-item__teacher">
+          <span class="catalog-item__teacher-title">Преподаватель:</span>
+          <span class="catalog-item__teacher-name">Байба Редере</span>
+        </div>
+        <div class="catalog-item__level">
+          <span class="catalog-item__level-title">Уровень сложности:</span>
+          <span class="catalog-item__level-type">мастер</span>
+        </div>
+        <p class="catalog-item__cost">4400 p.</p>
+      </section>
+      <section class="catalog__card catalog-item">
+        <div class="catalog-item__image-wrapper">
+          <picture>
+            <source type="image/webp" srcset="/img/index-image@1x.webp 1x, /img/index-image@2x.webp 2x">
+            <img class="catalog-item__image" src="/img/index-image@1x.jpg" srcset="/img/index-image@2x.jpg 2x"
+                 alt="Фото курса по валянию">
+          </picture>
+        </div>
+        <h2 class="catalog-item__title">Легкое платье "Когда двое встречаются"</h2>
+        <p class="catalog-item__about">Легкое платье из префельта на шёлке</p>
+        <div class="catalog-item__teacher">
+          <span class="catalog-item__teacher-title">Преподаватель:</span>
+          <span class="catalog-item__teacher-name">Байба Редере</span>
+        </div>
+        <div class="catalog-item__level">
+          <span class="catalog-item__level-title">Уровень сложности:</span>
+          <span class="catalog-item__level-type">мастер</span>
+        </div>
+        <p class="catalog-item__cost">4400 p.</p>
+      </section>
+      <section class="catalog__card catalog-item">
+        <div class="catalog-item__image-wrapper">
+          <picture>
+            <source type="image/webp" srcset="/img/index-image@1x.webp 1x, /img/index-image@2x.webp 2x">
+            <img class="catalog-item__image" src="/img/index-image@1x.jpg" srcset="/img/index-image@2x.jpg 2x"
+                 alt="Фото курса по валянию">
+          </picture>
+        </div>
+        <h2 class="catalog-item__title">Легкое платье "Когда двое встречаются"</h2>
+        <p class="catalog-item__about">Легкое платье из префельта на шёлке</p>
+        <div class="catalog-item__teacher">
+          <span class="catalog-item__teacher-title">Преподаватель:</span>
+          <span class="catalog-item__teacher-name">Байба Редере</span>
+        </div>
+        <div class="catalog-item__level">
+          <span class="catalog-item__level-title">Уровень сложности:</span>
+          <span class="catalog-item__level-type">мастер</span>
+        </div>
+        <p class="catalog-item__cost">4400 p.</p>
+      </section>
+      </div>
+    <p class="courses__text">Видео-курсы и уроки нашей онлайн школы войлока и других видов рукоделия созданы ведущими
+      мастерами с многолетним стажем мастера и преподавателя, поэтому вы сможете быстро и без ошибок научиться валять,
+      вышивать, окрашивать изделия из войлока, красить шелк, декорировать работы вышивкой. Мы постоянно пополняем нашу
+      библиотеку, чтобы Вы могли найти для себя самые интересные и новые технологии, приёмы и совершенствоваться в
+      любимом рукоделии в любой точке мира!</p>
+    <p class="courses__text">Если Вы не нашли подходящий курс, напишите нам! Мы постараемся выполнить Ваш запрос!</p>
+  </div>
+</main>
+
+<footer class="page-footer">
+  <div class="page-footer__container container">
+    <div class="page-footer__main-block">
+      <div class="page-footer__logo-wrapper">
+        <a class="page-footer__logo" href="index2.html">
+          <img class="page-footer__logo-image" src="/img/logo-footer-desktop@1x.png" srcset="img/logo-footer-desktop@2x.png 2x"
+               alt="Логотип Шкатулочки">
+        </a>
+        <a href="index2.html" class="page-footer__title">Школа современного войлока</a>
+      </div>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__column">
+          <ul class="page-footer__list contacts-list contacts-list--footer">
+            <li class="contacts-list__item">
+              <a class="contacts-list__phone contacts-list__phone--footer" href="tel:+7-985-480-77-40">8-985-480-77-40</a>
+            </li>
+            <li class="contacts-list__item">
+              <a class="contacts-list__link" href="#">Заказать звонок</a>
+            </li>
+          </ul>
+          <div>
+            <a class="page-footer__policy" href="#">Договор-оферта</a>
+            <a class="page-footer__policy" href="#"><span class="page-footer__line"></span>Политика конфиденциальности</a>
+          </div>
+        </div>
+        <div class="page-footer__column">
+          <ul class="page-footer__list nav-list">
+            <li class="nav-list__item nav-list__item--active">
+              <a class="nav-list__link" href="about.html">О нас</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="news.html">Новости</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="courses.html">Курсы</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="teachers.html">Преподаватели</a>
+            </li>
+          </ul>
+          <ul class="page-footer__list nav-list">
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="usefull.html">Полезности</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="free.html">Бесплатно</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="reviews.html">Отзывы</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer__copyright">
+    <div class="copyright container">
+      <p class="copyright__text">Шкатулочка. Все права защищены</p>
+      <a class="copyright__link" href="#"><span class="copyright__line"></span>Разработано с любовью в SEO Expert OÜ</a>
+    </div>
+  </div>
+</footer>
+<script src="js/burger.js"></script>
+<!--<script src="js/filter-list.js"></script>-->
+<script>svg4everybody();</script>
+</body>
+</html>
