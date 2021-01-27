@@ -9,7 +9,7 @@ $(function () {
     .addClass('filter--closed');
 
   $filterMainToggle
-    .removeClass('filter__toggle--nojs')
+    // .removeClass('filter__toggle--nojs')
     .addClass('filter__main-toggle--open');
 
   $filterList
@@ -52,7 +52,7 @@ $(function () {
       .toggleClass('filter--closed')
       .toggleClass('filter--open');
 
-    $filterToggle
+    $(this)
       .toggleClass('filter__toggle--open')
       .toggleClass('filter__toggle--closed');
 

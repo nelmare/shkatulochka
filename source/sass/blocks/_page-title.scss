@@ -7,7 +7,7 @@
   color: $white;
   text-align: left;
   height: 40vw;
-  padding: 0 0 50px 20px;
+  padding: 0 0 20px 20px;
   display: flex;
   align-items: flex-end;
   background-color: rgb(160,167,183);
@@ -30,6 +30,7 @@
 
 .page-title--wetfelting {
   background-image: url("../img/courses-title2.jpg");
+  font-size: 35px;
 }
 
 @media (min-width: $tablet-width) {

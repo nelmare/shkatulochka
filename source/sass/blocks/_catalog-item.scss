@@ -1,0 +1,196 @@
+.catalog-item {
+  width: 100%;
+  //max-width: 300px;
+  margin: 0 0 30px 0;
+}
+
+.catalog-item__wrapper {
+  position: relative;
+}
+
+.catalog-item__image-link {
+  position: relative;
+  padding-bottom: 100%;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.catalog-item__image-wrapper {
+  width: 100%;
+  //min-height: 120px;
+  //background-image: url("../img/box1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+//.catalog-item__image {
+//  display: block;
+//  background-color: rgb(240, 240, 240);
+//  width: 100%;
+//  height: 100%;
+//  object-fit: cover;
+//}
+
+.catalog-item__image-link:hover .catalog-item__image-wrapper {
+  //background-image: url("../img/box1-hover.jpg");
+  //background-size: cover;
+  //background-position: center;
+  //background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.catalog-item--1 .catalog-item__image-wrapper {
+  background-image: url("../img/box1.jpg");
+}
+
+.catalog-item--1 .catalog-item__image-link:hover .catalog-item__image-wrapper {
+  background-image: url("../img/box1-hover.jpg");
+}
+
+.catalog-item--2 .catalog-item__image-wrapper {
+  background-image: url("../img/box2.jpg");
+}
+
+.catalog-item--2 .catalog-item__image-link:hover .catalog-item__image-wrapper {
+  background-image: url("../img/box2-hover.png");
+}
+
+.catalog-item--3 .catalog-item__image-wrapper {
+  background-image: url("../img/box3.jpg");
+}
+
+.catalog-item--3 .catalog-item__image-link:hover .catalog-item__image-wrapper {
+  background-image: url("../img/box3-hover.jpg");
+}
+
+.catalog-item--4 .catalog-item__image-wrapper {
+  background-image: url("../img/box4.jpg");
+}
+
+.catalog-item--4 .catalog-item__image-link:hover .catalog-item__image-wrapper {
+  background-image: url("../img/box4-hover.jpg");
+}
+
+.catalog-item--5 .catalog-item__image-wrapper {
+  background-image: url("../img/box5.jpg");
+}
+
+.catalog-item--5 .catalog-item__image-link:hover .catalog-item__image-wrapper {
+  background-image: url("../img/box5-hover.jpg");
+}
+
+.catalog-item--6 .catalog-item__image-wrapper {
+   background-image: url("../img/box6.jpg");
+ }
+
+.catalog-item--6 .catalog-item__image-link:hover .catalog-item__image-wrapper {
+  background-image: url("../img/box6-hover.jpg");
+}
+
+.catalog-item--7 .catalog-item__image-wrapper {
+  background-image: url("../img/box7.jpg");
+}
+
+.catalog-item--7 .catalog-item__image-link:hover .catalog-item__image-wrapper,
+.catalog-item--12 .catalog-item__image-link:hover .catalog-item__image-wrapper {
+  background-image: url("../img/box7-hover.jpg");
+}
+
+.catalog-item--8 .catalog-item__image-wrapper {
+  background-image: url("../img/box8.jpg");
+}
+
+.catalog-item--8 .catalog-item__image-link:hover .catalog-item__image-wrapper {
+  background-image: url("../img/box8-hover.jpg");
+}
+
+.catalog-item--9 .catalog-item__image-wrapper {
+  background-image: url("../img/box9.jpg");
+}
+
+.catalog-item--9 .catalog-item__image-link:hover .catalog-item__image-wrapper {
+  background-image: url("../img/box9-hover.jpg");
+}
+
+.catalog-item--10 .catalog-item__image-wrapper {
+  background-image: url("../img/box10.jpg");
+}
+
+.catalog-item--10 .catalog-item__image-link:hover .catalog-item__image-wrapper {
+  background-image: url("../img/box10-hover.jpg");
+}
+
+.catalog-item--11 .catalog-item__image-wrapper {
+  background-image: url("../img/box11.jpg");
+}
+
+.catalog-item--11 .catalog-item__image-link:hover .catalog-item__image-wrapper {
+  background-image: url("../img/box11-hover.jpg");
+}
+
+.catalog-item--12 .catalog-item__image-wrapper {
+  background-image: url("../img/box12.jpg");
+}
+
+.catalog-item__main-link {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  pointer-events: auto;
+  content: "";
+  background-color: rgba(0,0,0,0);
+}
+
+.catalog-item__title {
+  @include margin-reset;
+  font-family: Museo Cyrl, "Arial", sans-serif;
+  color: $dark-blue;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.catalog-item__about {
+  @include margin-reset;
+  margin-bottom: 15px;
+}
+
+.catalog-item__teacher,
+.catalog-item__level {
+  margin-bottom: 15px;
+}
+
+.catalog-item__teacher-title,
+.catalog-item__level-title,
+.catalog-item__cost {
+  color: $dark-red-brown;
+}
+
+.catalog-item__cost {
+  @include margin-reset;
+  font-weight: 700;
+}
+
+@media (min-width: 400px) {
+  .catalog-item {
+    width: 45%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-item {
+    width: 30%;
+  }
+}

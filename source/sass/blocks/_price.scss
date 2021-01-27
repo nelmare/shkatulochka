@@ -76,55 +76,43 @@
 .price__marks {
   margin-bottom: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .price__marks label {
   display: inline-block;
   vertical-align: top;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 33px;
   cursor: pointer;
-  width: 40%;
-}
-
-.price__marks .price__min,
-.price__marks .price__max {
-  width: 90px;
-  //padding-left: 65px;
-}
-
-.price__marks .price__max {
-  //padding-left: 54px;
+  width: 30%;
 }
 
 .price__marks input {
   width: 100%;
-  min-height: 32px;
-
   margin: 0;
   padding: 10px;
-
   font: inherit;
   color: inherit;
-
   border: 1px solid $grey;
   background: none;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 13px;
+  border-radius: 5px;
 }
 
 .price__marks span {
   display: inline-block;
   vertical-align: middle;
-
-  height: 2px;
+  height: 1px;
   width: 22px;
-
   margin-top: 5px;
   margin-left: 1px;
-
   background: $grey;
+}
+
+.price__max {
+  margin-right: 15px;
 }
 
 .price__range {
@@ -140,7 +128,7 @@
 .price__line-white {
   width: 80%;
   height: 2px;
-  background: $pink;
+  background: $dark-sand;
 }
 
 .price__circle {
@@ -159,21 +147,51 @@
 .price__circle:hover {
   position: absolute;
   top: -9px;
-
-  width: 4px;
-  height: 4px;
-
-  background: #ababab;
-  border: 9px solid #ffffff;
+  border: 1px solid $blue;
   border-radius: 50%;
   -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
+
 .price__circle--left {
   left: 0;
 }
 
 .price__circle--right {
   left: 80%;
+}
+
+.price__button {
+  padding: 10px;
+  font-size: 13px;
+  line-height: 13px;
+  border: 2px solid $dark-sand;
+  border-radius: 5px;
+  background-color: $white;
+}
+
+.price__button:hover,
+.price__button:focus {
+  opacity: 70%;
+}
+
+@media (min-width: $laptop-width) {
+  .price__button {
+    display: none;
+  }
+
+  .price__max {
+    margin-right: 0;
+  }
+
+  .price__marks label {
+    width: 45%;
+  }
+
+  .price__marks input {
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 400;
+  }
 }

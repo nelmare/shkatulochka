@@ -1,6 +1,6 @@
-.breadcrumbs {
-  margin-bottom: 20px;
-}
+//.breadcrumbs {
+//  margin-bottom: 20px;
+//}
 
 .breadcrumbs__list {
   @include margin-reset;
@@ -28,6 +28,23 @@
   margin: 0 5px;
   color: $red;
 }
+
+@media (min-width: $tablet-width) {
+  .breadcrumbs__link {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: $laptop-width) {
+  .breadcrumbs {
+    display: block;
+    width: 100%;
+    flex-grow: 1;
+  }
+}
+
 
 @media (min-width: $desktop-width) {
   .breadcrumbs {

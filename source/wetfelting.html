@@ -125,9 +125,17 @@
         </li>
       </ul>
     </div>
-    <div class="courses__searching">
+
+    <div class="courses__show">
+      <div class="courses__search">
+        <form class="courses__search-form" method="get" action="#">
+          <label class="visually-hidden" for="search">Поиск</label>
+          <input class="courses__search-field" type="text" name="search" id="search" placeholder="Поиск">
+          <button class="courses__search-button" type="submit" aria-label="Найти"></button>
+        </form>
+      </div>
       <div class="courses__filter filter">
-          <a class="filter__title filter__toggle--nojs" href="#">Фильтр</a>
+          <a class="filter__title" href="#">Фильтр</a>
           <ul class="filter__main-list list filter__list--nojs">
             <li class="filter__item category list__item">
               <a class="filter__link-item category__link-item filter__toggle--nojs">Изделие</a>
@@ -239,61 +247,31 @@
                 </li>
               </ul>
             </li>
-            <li class="filter__button-wrapper">
-              <button class="filter__button" type="submit">Применить</button>
-              <button class="filter__clear" type="button">Сбросить фильтр</button>
-            </li>
           </ul>
-
         </div>
-        <div class="courses__searching-wrapper">
-          <form class="courses__searching-form" method="get" action="#">
-            <label class="visually-hidden" for="search">Поиск</label>
-            <input class="courses__searching-field" type="text" name="search" id="search" placeholder="Поиск">
-            <button class="courses__searching-button" type="submit" aria-label="Найти"></button>
-          </form>
-          <div class="courses__sorting sorting">
-            <select class="sorting__select">
-              <option selected>Сортировка: по умолчанию</option>
-              <option value="1">По возрастанию цены</option>
-              <option value="2">По убыванию цены</option>
-              <option value="3">Название: A-Я</option>
-              <option value="4">Название: A-Я</option>
-              <option value="5">Сначала новые</option>
-              <option value="6">Сначала старые</option>
-            </select>
-          </div>
-        </div>
+      <div class="courses__sorting sorting">
+        <select class="sorting__select">
+          <option selected>Сортировка: по умолчанию</option>
+          <option value="1">По возрастанию цены</option>
+          <option value="2">По убыванию цены</option>
+          <option value="3">Название: A-Я</option>
+          <option value="4">Название: A-Я</option>
+          <option value="5">Сначала новые</option>
+          <option value="6">Сначала старые</option>
+        </select>
+      </div>
     </div>
-    <div class="courses__catalog catalog">
-    <section class="catalog__card catalog-item">
-      <div class="catalog-item__image-wrapper">
-        <picture>
-          <source type="image/webp" srcset="/img/index-image@1x.webp 1x, /img/index-image@2x.webp 2x">
-          <img class="catalog-item__image" src="/img/index-image@1x.jpg" srcset="/img/index-image@2x.jpg 2x"
-               alt="Фото курса по валянию">
-        </picture>
-      </div>
-      <h2 class="catalog-item__title">Легкое платье "Когда двое встречаются"</h2>
-      <p class="catalog-item__about">Легкое платье из префельта на шёлке</p>
-      <div class="catalog-item__teacher">
-        <span class="catalog-item__teacher-title">Преподаватель:</span>
-        <span class="catalog-item__teacher-name">Байба Редере</span>
-      </div>
-      <div class="catalog-item__level">
-        <span class="catalog-item__level-title">Уровень сложности:</span>
-        <span class="catalog-item__level-type">мастер</span>
-      </div>
-      <p class="catalog-item__cost">4400 p.</p>
-    </section>
-      <section class="catalog__card catalog-item">
-        <div class="catalog-item__image-wrapper">
-          <picture>
-            <source type="image/webp" srcset="/img/index-image@1x.webp 1x, /img/index-image@2x.webp 2x">
-            <img class="catalog-item__image" src="/img/index-image@1x.jpg" srcset="/img/index-image@2x.jpg 2x"
-                 alt="Фото курса по валянию">
-          </picture>
-        </div>
+    <div class="courses__catalog">
+      <section class="catalog__card catalog-item catalog-item--1">
+        <a class="catalog-item__image-link" href="#">
+          <div class="catalog-item__image-wrapper">
+<!--            <picture>-->
+<!--  &lt;!&ndash;            <source type="image/webp" srcset="/img/box1.webp 1x, /img/index-image@2x.webp 2x">&ndash;&gt;-->
+<!--              <img class="catalog-item__image" src="/img/box1.jpg" alt="Фото курса по валянию">-->
+<!--            </picture>-->
+          </div>
+        </a>
+        <div class="catalog-item__wrapper">
         <h2 class="catalog-item__title">Легкое платье "Когда двое встречаются"</h2>
         <p class="catalog-item__about">Легкое платье из префельта на шёлке</p>
         <div class="catalog-item__teacher">
@@ -305,108 +283,186 @@
           <span class="catalog-item__level-type">мастер</span>
         </div>
         <p class="catalog-item__cost">4400 p.</p>
-      </section>
-      <section class="catalog__card catalog-item">
-        <div class="catalog-item__image-wrapper">
-          <picture>
-            <source type="image/webp" srcset="/img/index-image@1x.webp 1x, /img/index-image@2x.webp 2x">
-            <img class="catalog-item__image" src="/img/index-image@1x.jpg" srcset="/img/index-image@2x.jpg 2x"
-                 alt="Фото курса по валянию">
-          </picture>
+        <a class="catalog-item__main-link" href="about.html"></a>
         </div>
-        <h2 class="catalog-item__title">Легкое платье "Когда двое встречаются"</h2>
-        <p class="catalog-item__about">Легкое платье из префельта на шёлке</p>
+      </section>
+      <section class="catalog__card catalog-item catalog-item--2">
+        <a class="catalog-item__image-link" href="#">
+          <div class="catalog-item__image-wrapper"></div>
+        </a>
+        <h2 class="catalog-item__title">Валяние из шерсти. Легкий старт</h2>
+        <p class="catalog-item__about">Курс новичка по мокрому валянию</p>
         <div class="catalog-item__teacher">
           <span class="catalog-item__teacher-title">Преподаватель:</span>
-          <span class="catalog-item__teacher-name">Байба Редере</span>
+          <span class="catalog-item__teacher-name">Ирина Полубояринова </span>
         </div>
         <div class="catalog-item__level">
           <span class="catalog-item__level-title">Уровень сложности:</span>
-          <span class="catalog-item__level-type">мастер</span>
+          <span class="catalog-item__level-type">средний</span>
         </div>
-        <p class="catalog-item__cost">4400 p.</p>
+        <p class="catalog-item__cost">4900 p.</p>
       </section>
-      <section class="catalog__card catalog-item">
-        <div class="catalog-item__image-wrapper">
-          <picture>
-            <source type="image/webp" srcset="/img/index-image@1x.webp 1x, /img/index-image@2x.webp 2x">
-            <img class="catalog-item__image" src="/img/index-image@1x.jpg" srcset="/img/index-image@2x.jpg 2x"
-                 alt="Фото курса по валянию">
-          </picture>
-        </div>
-        <h2 class="catalog-item__title">Легкое платье "Когда двое встречаются"</h2>
-        <p class="catalog-item__about">Легкое платье из префельта на шёлке</p>
+      <section class="catalog__card catalog-item catalog-item--3">
+        <a class="catalog-item__image-link" href="#">
+          <div class="catalog-item__image-wrapper"></div>
+        </a>
+        <h2 class="catalog-item__title">"Весенний браслет с Фиалками"</h2>
+        <p class="catalog-item__about">Украшение в технике трехмерного войлока</p>
         <div class="catalog-item__teacher">
           <span class="catalog-item__teacher-title">Преподаватель:</span>
-          <span class="catalog-item__teacher-name">Байба Редере</span>
+          <span class="catalog-item__teacher-name">Елена Дол</span>
         </div>
         <div class="catalog-item__level">
           <span class="catalog-item__level-title">Уровень сложности:</span>
-          <span class="catalog-item__level-type">мастер</span>
+          <span class="catalog-item__level-type">новичок</span>
         </div>
-        <p class="catalog-item__cost">4400 p.</p>
+        <p class="catalog-item__cost">3500 p.</p>
       </section>
-      <section class="catalog__card catalog-item">
-        <div class="catalog-item__image-wrapper">
-          <picture>
-            <source type="image/webp" srcset="/img/index-image@1x.webp 1x, /img/index-image@2x.webp 2x">
-            <img class="catalog-item__image" src="/img/index-image@1x.jpg" srcset="/img/index-image@2x.jpg 2x"
-                 alt="Фото курса по валянию">
-          </picture>
-        </div>
-        <h2 class="catalog-item__title">Легкое платье "Когда двое встречаются"</h2>
-        <p class="catalog-item__about">Легкое платье из префельта на шёлке</p>
+      <section class="catalog__card catalog-item catalog-item--4">
+        <a class="catalog-item__image-link" href="#">
+          <div class="catalog-item__image-wrapper"></div>
+        </a>
+        <h2 class="catalog-item__title">Колье "Золотой нарцисс"</h2>
+        <p class="catalog-item__about">Украшение в технике трехмерного войлока</p>
         <div class="catalog-item__teacher">
           <span class="catalog-item__teacher-title">Преподаватель:</span>
-          <span class="catalog-item__teacher-name">Байба Редере</span>
+          <span class="catalog-item__teacher-name">Елена Дол</span>
         </div>
         <div class="catalog-item__level">
           <span class="catalog-item__level-title">Уровень сложности:</span>
-          <span class="catalog-item__level-type">мастер</span>
+          <span class="catalog-item__level-type">средний</span>
         </div>
-        <p class="catalog-item__cost">4400 p.</p>
+        <p class="catalog-item__cost">3500 p.</p>
       </section>
-      <section class="catalog__card catalog-item">
-        <div class="catalog-item__image-wrapper">
-          <picture>
-            <source type="image/webp" srcset="/img/index-image@1x.webp 1x, /img/index-image@2x.webp 2x">
-            <img class="catalog-item__image" src="/img/index-image@1x.jpg" srcset="/img/index-image@2x.jpg 2x"
-                 alt="Фото курса по валянию">
-          </picture>
-        </div>
-        <h2 class="catalog-item__title">Легкое платье "Когда двое встречаются"</h2>
-        <p class="catalog-item__about">Легкое платье из префельта на шёлке</p>
+      <section class="catalog__card catalog-item catalog-item--5">
+        <a class="catalog-item__image-link" href="#">
+          <div class="catalog-item__image-wrapper"></div>
+        </a>
+        <h2 class="catalog-item__title">"Ворона Варвара"</h2>
+        <p class="catalog-item__about">Перчаточная кукла на 3D шаблоне</p>
         <div class="catalog-item__teacher">
           <span class="catalog-item__teacher-title">Преподаватель:</span>
-          <span class="catalog-item__teacher-name">Байба Редере</span>
+          <span class="catalog-item__teacher-name">Елена Рагулина</span>
         </div>
         <div class="catalog-item__level">
           <span class="catalog-item__level-title">Уровень сложности:</span>
-          <span class="catalog-item__level-type">мастер</span>
+          <span class="catalog-item__level-type">средний</span>
         </div>
-        <p class="catalog-item__cost">4400 p.</p>
+        <p class="catalog-item__cost">3500 p.</p>
       </section>
-      <section class="catalog__card catalog-item">
-        <div class="catalog-item__image-wrapper">
-          <picture>
-            <source type="image/webp" srcset="/img/index-image@1x.webp 1x, /img/index-image@2x.webp 2x">
-            <img class="catalog-item__image" src="/img/index-image@1x.jpg" srcset="/img/index-image@2x.jpg 2x"
-                 alt="Фото курса по валянию">
-          </picture>
-        </div>
-        <h2 class="catalog-item__title">Легкое платье "Когда двое встречаются"</h2>
-        <p class="catalog-item__about">Легкое платье из префельта на шёлке</p>
+      <section class="catalog__card catalog-item catalog-item--6">
+        <a class="catalog-item__image-link" href="#">
+          <div class="catalog-item__image-wrapper"></div>
+        </a>
+        <h2 class="catalog-item__title">"Лук от семи недуг"</h2>
+        <p class="catalog-item__about">Практикум по банной шапке или грелке на чайник</p>
         <div class="catalog-item__teacher">
           <span class="catalog-item__teacher-title">Преподаватель:</span>
-          <span class="catalog-item__teacher-name">Байба Редере</span>
+          <span class="catalog-item__teacher-name">Ольга Демьянова</span>
         </div>
         <div class="catalog-item__level">
           <span class="catalog-item__level-title">Уровень сложности:</span>
-          <span class="catalog-item__level-type">мастер</span>
+          <span class="catalog-item__level-type">средний</span>
         </div>
-        <p class="catalog-item__cost">4400 p.</p>
+        <p class="catalog-item__cost">1500 p.</p>
       </section>
-      </div>
+      <section class="catalog__card catalog-item catalog-item--7">
+        <a class="catalog-item__image-link" href="#">
+          <div class="catalog-item__image-wrapper"></div>
+        </a>
+        <h2 class="catalog-item__title">Банные шапки</h2>
+        <p class="catalog-item__about"> Базовый курс по плотному войлоку</p>
+        <div class="catalog-item__teacher">
+          <span class="catalog-item__teacher-title">Преподаватель:</span>
+          <span class="catalog-item__teacher-name">Ольга Демьянова</span>
+        </div>
+        <div class="catalog-item__level">
+          <span class="catalog-item__level-title">Уровень сложности:</span>
+          <span class="catalog-item__level-type">новичок</span>
+        </div>
+        <p class="catalog-item__cost">900 p.</p>
+      </section>
+      <section class="catalog__card catalog-item catalog-item--8">
+        <a class="catalog-item__image-link" href="#">
+          <div class="catalog-item__image-wrapper"></div>
+        </a>
+        <h2 class="catalog-item__title">"Принцесса на горошине"</h2>
+        <p class="catalog-item__about">Войлочный практикум по созданию броши</p>
+        <div class="catalog-item__teacher">
+          <span class="catalog-item__teacher-title">Преподаватель:</span>
+          <span class="catalog-item__teacher-name">Ольга Демьянова</span>
+        </div>
+        <div class="catalog-item__level">
+          <span class="catalog-item__level-title">Уровень сложности:</span>
+          <span class="catalog-item__level-type">новичок</span>
+        </div>
+        <p class="catalog-item__cost">750 p.</p>
+      </section>
+      <section class="catalog__card catalog-item catalog-item--9">
+        <a class="catalog-item__image-link" href="#">
+          <div class="catalog-item__image-wrapper"></div>
+        </a>
+        <h2 class="catalog-item__title">Цветы</h2>
+        <p class="catalog-item__about">Мастер-класс по валянию сложного четырёхярусного цветка</p>
+        <div class="catalog-item__teacher">
+          <span class="catalog-item__teacher-title">Преподаватель:</span>
+          <span class="catalog-item__teacher-name">Наталья Смольянинова</span>
+        </div>
+        <div class="catalog-item__level">
+          <span class="catalog-item__level-title">Уровень сложности:</span>
+          <span class="catalog-item__level-type">новичок</span>
+        </div>
+        <p class="catalog-item__cost">1500 p.</p>
+      </section>
+      <section class="catalog__card catalog-item catalog-item--10">
+        <a class="catalog-item__image-link" href="#">
+          <div class="catalog-item__image-wrapper"></div>
+        </a>
+        <h2 class="catalog-item__title">Цветочный шарфик</h2>
+        <p class="catalog-item__about">Мастер-класс по валянию шарфика с объёмным цельновалянным цветком</p>
+        <div class="catalog-item__teacher">
+          <span class="catalog-item__teacher-title">Преподаватель:</span>
+          <span class="catalog-item__teacher-name">Наталья Смольянинова</span>
+        </div>
+        <div class="catalog-item__level">
+          <span class="catalog-item__level-title">Уровень сложности:</span>
+          <span class="catalog-item__level-type">новичок</span>
+        </div>
+        <p class="catalog-item__cost">1900 p.</p>
+      </section>
+      <section class="catalog__card catalog-item catalog-item--11">
+        <a class="catalog-item__image-link" href="#">
+          <div class="catalog-item__image-wrapper"></div>
+        </a>
+        <h2 class="catalog-item__title">Варежки с цветочным декором</h2>
+        <p class="catalog-item__about">Мастер-класс по валянию варежек с объёмным декором</p>
+        <div class="catalog-item__teacher">
+          <span class="catalog-item__teacher-title">Преподаватель:</span>
+          <span class="catalog-item__teacher-name">Наталья Смольянинова</span>
+        </div>
+        <div class="catalog-item__level">
+          <span class="catalog-item__level-title">Уровень сложности:</span>
+          <span class="catalog-item__level-type">новичок</span>
+        </div>
+        <p class="catalog-item__cost">2000 p.</p>
+      </section>
+      <section class="catalog__card catalog-item catalog-item--12">
+        <a class="catalog-item__image-link" href="#">
+          <div class="catalog-item__image-wrapper"></div>
+        </a>
+        <h2 class="catalog-item__title">"Березовый фреш" и "Дубовый веник"</h2>
+        <p class="catalog-item__about">Войлочный практикум по баннымшапкам/грелкам на чайник</p>
+        <div class="catalog-item__teacher">
+          <span class="catalog-item__teacher-title">Преподаватель:</span>
+          <span class="catalog-item__teacher-name">Ольга Демьянова</span>
+        </div>
+        <div class="catalog-item__level">
+          <span class="catalog-item__level-title">Уровень сложности:</span>
+          <span class="catalog-item__level-type">новичок</span>
+        </div>
+        <p class="catalog-item__cost">1300 p.</p>
+      </section>
+    </div>
     <p class="courses__text">Видео-курсы и уроки нашей онлайн школы войлока и других видов рукоделия созданы ведущими
       мастерами с многолетним стажем мастера и преподавателя, поэтому вы сможете быстро и без ошибок научиться валять,
       вышивать, окрашивать изделия из войлока, красить шелк, декорировать работы вышивкой. Мы постоянно пополняем нашу

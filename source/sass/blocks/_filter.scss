@@ -1,33 +1,30 @@
 .filter {
-
+  padding: 10px 0;
+  width: 100%;
 }
 
-//.filter__main-list {
-//  padding: 0px 0;
-//}
+.filter__main-list {
+  width: 100%;
+  min-width: 280px;
+  max-width: 70%;
+}
 
 .filter__title {
-  color: $red;
+  color: $blue;
   font-size: 13px;
   font-weight: 500;
   line-height: 18px;
   cursor: pointer;
   text-decoration: none;
-  border-bottom: 1px dashed $red;
+  //border-bottom: 1px dashed $red;
   display: inline-block;
+  //margin-bottom: 30px;
+  border: 1px solid $blue;
+  padding: 7px 10px;
+  border-radius: 5px;
 }
 
-.filter__main-toggle--open {
-  display: block;
-}
 
-.filter__toggle--nojs {
-  display: none;
-}
-
-.filter__list--nojs {
-  display: block;
-}
 
 .filter__link-item {
   border-bottom: 1px solid $sand;
@@ -63,26 +60,8 @@
   font-weight: 600;
 }
 
-.filter__toggle--closed {
-  border-bottom: none;
-}
 
-.filter__main-toggle--closed {
-  font-weight: bold;
-}
 
-.filter__toggle--closed:after {
-  transform: rotate(45deg);
-  right: 1px;
-}
-
-.filter--open {
-  display: block;
-}
-
-.filter--closed {
-  display: none;
-}
 
 
 
@@ -124,4 +103,81 @@
   display: inline-block;
 }
 
+@media (max-width: 991px) {
+  .filter__main-toggle--open {
+    display: inline-block;
+  }
+
+  .filter__toggle--nojs {
+    display: none;
+  }
+
+  .filter__list--nojs {
+    display: block;
+  }
+
+  .filter__toggle--closed {
+    border-bottom: none;
+  }
+
+  .filter__main-toggle--closed,
+  .filter__title:hover {
+    font-weight: bold;
+  }
+
+  .filter__toggle--closed:after {
+    transform: rotate(45deg);
+    right: 1px;
+  }
+
+  .filter--open {
+    display: block;
+  }
+
+  .filter--closed {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+//.filter__title {
+//  font-size: 15px;
+//  line-height: 22px;
+//}
+}
+
+@media (min-width: $laptop-width) {
+  .filter {
+    background-color: $sand;
+    //position: absolute;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  .filter__main-list {
+    min-width: 220px;
+    max-width: none;
+  }
+
+  .filter__link-item {
+    padding-left: 0;
+    border-bottom: none;
+    font-weight: 600;
+    color: $dark-red-brown;
+    font-size: 15px;
+  }
+
+  .filter__list-item {
+    padding-left: 20px;
+    font-size: 15px;
+  }
+
+  .filter__link-item:after {
+    display: none;
+  }
+
+  .filter__title {
+    display: none;
+  }
+}
 

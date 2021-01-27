@@ -11,5 +11,5 @@ navToggle.addEventListener('click', function () {
   navMainList.classList.toggle('main-nav--open');
   navToggle.classList.toggle('main-nav__toggle--open');
   navToggle.classList.toggle('main-nav__toggle--closed');
-  document.body.classList.toggle('no-scroll');
+  // document.body.classList.toggle('no-scroll');
 });
