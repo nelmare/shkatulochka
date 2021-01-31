@@ -193,8 +193,8 @@
   }
 
   .news-page p {
-    font-size: 17px;
-    line-height: 27px;
+    font-size: 16px;
+    line-height: 28px;
   }
 
   .news-page__label-wrapper {
@@ -228,10 +228,10 @@
 }
 
 @media (min-width: $desktop-width) {
-  .news-page p {
-    font-size: 20px;
-    line-height: 32px;
-  }
+  //.news-page p {
+  //  font-size: 20px;
+  //  line-height: 32px;
+  //}
 
   .news-page__image-wrapper {
     height: 21vw;

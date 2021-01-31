@@ -33,6 +33,10 @@
   font-size: 35px;
 }
 
+.page-title--teachers {
+  background-image: url("../img/teachers-title.jpg");
+}
+
 @media (min-width: $tablet-width) {
   .page-title {
     height: 400px;

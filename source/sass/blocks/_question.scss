@@ -1,0 +1,26 @@
+.question__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  @include margin-reset;
+  //padding-left: 20px;
+}
+
+.question__item p {
+  @include margin-reset;
+  margin-bottom: 10px;
+}
+
+//.question__list .question__item::before {
+//  content: "";
+//  background-color: $red;
+//  font-weight: bold;
+//  display: inline-block;
+//  width: 10px;
+//  height: 10px;
+//  border-radius: 50%;
+//  position: absolute;
+//  top: 7px;
+//  left: 0;
+//}

@@ -1,0 +1,76 @@
+.review {
+  background-color: $sand;
+  padding: 20px 20px 50px 20px;
+}
+
+.review__wrapper {
+  background-color: $white;
+  border: 1px solid $red;
+  padding: 20px 20px 0 20px;
+  border-radius: 7px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.review__author,
+.review__teacher,
+.review__theme {
+  @include margin-reset;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.review__rating {
+  margin-bottom: 10px;
+}
+
+.review__rating-item {
+  background-image: url("../img/heart-rating.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+}
+
+.review__block {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px 0;
+  flex-wrap: wrap;
+}
+
+.review__text {
+  @include margin-reset;
+}
+
+@media (min-width: $tablet-width) {
+  .review__wrapper {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 1174px;
+    margin: 0 auto;
+  }
+
+  .review {
+    padding: 20px 90px 50px 90px;
+  }
+
+  .review__title {
+    max-width: 1174px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review {
+    padding: 20px 165px 50px 165px;
+  }
+
+  .review__wrapper,
+  .review__title {
+    max-width: 1024px;
+  }
+}

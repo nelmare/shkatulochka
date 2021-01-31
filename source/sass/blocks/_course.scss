@@ -1,0 +1,126 @@
+.courses--hide {
+  display: none;
+}
+
+.course {
+  border-top: 1px solid $sand;
+  padding-top: 40px;
+  padding-bottom: 0;
+  max-width: 1354px;
+}
+
+.course__image-wrapper {
+  width: 100%;
+  margin: 20px 0 20px 0;
+}
+
+.course__image-wrapper--main {
+  max-width: 540px;
+}
+
+.course__main-title {
+  @include margin-reset;
+  font-family: Museo Cyrl, "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  color: $dark-blue;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.course__info-block {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+  max-width: 350px;
+}
+
+.course__info-block td {
+  padding: 5px 10px 5px 0;
+  text-align: left;
+  width: 50%;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.course__price-block {
+  padding-bottom: 15px;
+}
+
+.course__title {
+  @include margin-reset;
+  padding: 10px 0;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: Museo Cyrl, "Arial", sans-serif;
+  color: $dark-blue;
+}
+
+.course__text {
+  @include margin-reset;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+
+
+@media (min-width: 640px) {
+  .course__beginning {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    grid-gap: 20px;
+  }
+
+  .course__image-wrapper {
+    max-width: 610px;
+    margin: 20px auto 20px auto;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .course__main-title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .course__title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .course__title--video {
+    text-align: center;
+  }
+
+  .course__info-block td,
+  .course__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+
+}
+
+
+@media (min-width: $laptop-width) {
+  .course__main-title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .course__title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .course__image-wrapper {
+    max-width: 840px;
+  }
+}

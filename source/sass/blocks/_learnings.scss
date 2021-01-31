@@ -51,6 +51,17 @@
   background-size: cover;
 }
 
+.learnings__title--course {
+  @include margin-reset;
+  font-family: Museo Cyrl, "Arial", sans-serif;
+  color: $dark-blue;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
 @media (min-width: $tablet-width) {
   .learnings {
     padding: 25px 0 0 0;
@@ -72,9 +83,18 @@
     width: 60%;
   }
 
+  .learnings__list--course {
+    width: 100%;
+  }
+
   .learnings__list .learnings__item::before {
     width: 60px;
     height: 45px;
+  }
+
+  .learnings__title--course {
+    font-size: 20px;
+    line-height: 26px;
   }
 }
 
@@ -94,4 +114,10 @@
     justify-content: space-between;
     align-content: center;
   }
+
+  .learnings__title--course {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
 }

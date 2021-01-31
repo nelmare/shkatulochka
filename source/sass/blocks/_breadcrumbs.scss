@@ -24,6 +24,11 @@
   cursor: pointer;
 }
 
+.breadcrumbs__link:hover,
+.breadcrumbs__link:focus {
+  color: $brown;
+}
+
 .breadcrumbs__slash {
   margin: 0 5px;
   color: $red;
@@ -31,9 +36,9 @@
 
 @media (min-width: $tablet-width) {
   .breadcrumbs__link {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 22px;
+    line-height: 24px;
   }
 }
 

@@ -125,7 +125,6 @@
         </li>
       </ul>
     </div>
-
     <div class="courses__show">
       <div class="courses__search">
         <form class="courses__search-form" method="get" action="#">
@@ -248,7 +247,24 @@
               </ul>
             </li>
           </ul>
+<!--        Класс .toast-show добавляется к блоку и элементам блока, чтобы показать сообщение о выбранных фильтрах и количестве найденных вариантов по-->
+<!--        фильтрам-->
+        <div class="course__toast toast">
+            <div class="toast__item-wrapper toast__number-wrapper">Найдено:
+              <span class="toast__item toast__number">1</span>
+            </div>
+            <div class="toast-show toast__item-wrapper">
+              <span class="toast__item">✕</span>&nbsp;Байба Редере
+            </div>
+            <div class="toast__item-wrapper">
+              <span class="toast__item">✕</span>&nbsp;Игрушки
+            </div>
+            <div class="toast__item-wrapper">
+              <span class="toast__item">✕</span>&nbsp;&gt; 1591
+            </div>
+            <button class="toast__filter-clean" type="button">Очистить все</button>
         </div>
+      </div>
       <div class="courses__sorting sorting">
         <select class="sorting__select">
           <option selected>Сортировка: по умолчанию</option>
@@ -263,7 +279,7 @@
     </div>
     <div class="courses__catalog">
       <section class="catalog__card catalog-item catalog-item--1">
-        <a class="catalog-item__image-link" href="#">
+        <a class="catalog-item__image-link" href="course-item.html">
           <div class="catalog-item__image-wrapper">
 <!--            <picture>-->
 <!--  &lt;!&ndash;            <source type="image/webp" srcset="/img/box1.webp 1x, /img/index-image@2x.webp 2x">&ndash;&gt;-->
@@ -272,18 +288,18 @@
           </div>
         </a>
         <div class="catalog-item__wrapper">
-        <h2 class="catalog-item__title">Легкое платье "Когда двое встречаются"</h2>
-        <p class="catalog-item__about">Легкое платье из префельта на шёлке</p>
-        <div class="catalog-item__teacher">
-          <span class="catalog-item__teacher-title">Преподаватель:</span>
-          <span class="catalog-item__teacher-name">Байба Редере</span>
-        </div>
-        <div class="catalog-item__level">
-          <span class="catalog-item__level-title">Уровень сложности:</span>
-          <span class="catalog-item__level-type">мастер</span>
-        </div>
-        <p class="catalog-item__cost">4400 p.</p>
-        <a class="catalog-item__main-link" href="about.html"></a>
+          <h2 class="catalog-item__title">Легкое платье "Когда двое встречаются"</h2>
+          <p class="catalog-item__about">Легкое платье из префельта на шёлке</p>
+          <div class="catalog-item__teacher">
+            <span class="catalog-item__teacher-title">Преподаватель:</span>
+            <span class="catalog-item__teacher-name">Байба Редере</span>
+          </div>
+          <div class="catalog-item__level">
+            <span class="catalog-item__level-title">Уровень сложности:</span>
+            <span class="catalog-item__level-type">мастер</span>
+          </div>
+          <p class="catalog-item__cost">4400 p.</p>
+          <a class="catalog-item__main-link" href="course-item.html"></a>
         </div>
       </section>
       <section class="catalog__card catalog-item catalog-item--2">
@@ -462,6 +478,12 @@
         </div>
         <p class="catalog-item__cost">1300 p.</p>
       </section>
+
+<!--      Чтобы показать сообщение об отсутствии вариантов поиска нужно добавить к карточкам товаров с классом .catalog-card-->
+<!--      класс .courses-hide и убрать класс .courses-hide у блока с классом .courses__error-->
+      <div class="courses__error courses-hide">
+        <p>Ничего не найдено. Попробуйте изменить параметры для поиска</p>
+      </div>
     </div>
     <p class="courses__text">Видео-курсы и уроки нашей онлайн школы войлока и других видов рукоделия созданы ведущими
       мастерами с многолетним стажем мастера и преподавателя, поэтому вы сможете быстро и без ошибок научиться валять,
