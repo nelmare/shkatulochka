@@ -82,6 +82,55 @@
   opacity: 70%;
 }
 
+.social__icon {
+  fill: $white;
+}
+
+.social--teachers {
+  background-color: inherit;
+  border-radius: 0;
+  padding: 10px 0 0;
+  justify-content: flex-start;
+}
+
+.social--teachers:before,
+.social--teachers:after {
+  display: none;
+}
+
+.social--teachers .social__list {
+  margin-right: 0;
+}
+
+.social--teachers .social__link {
+  border: 2px solid $red;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: 0 10px 10px 0;
+}
+
+.social--teachers .social__icon {
+  fill: $red;
+  width: 15px;
+  height: 15px;
+}
+
+.social--teachers .social__icon--email {
+  width: 26px;
+  height: 20px;
+}
+
+.social--teachers .social__link--yam {
+  border: none;
+}
+
+.social--teachers .social__link--yam {
+  background-image: url("../img/ym-icon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 @media (min-width: $tablet-width) {
   .social {
@@ -90,6 +139,11 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+  }
+
+  .social--teachers {
+    padding: 10px 0 0;
+    justify-content: flex-start;
   }
 
   .social__wrapper {
@@ -139,6 +193,10 @@
     padding: 40px 140px 15px 140px;
   }
 
+  .social--teachers {
+    padding: 10px 0 0;
+  }
+
   .social--variant {
     padding: 40px 80px 15px 80px;
   }
@@ -167,6 +225,10 @@
 @media (min-width: $xlaptop-width) {
   .social {
     padding: 40px 100px 15px 120px;
+  }
+
+  .social--teachers {
+    padding: 10px 0 0;
   }
 
   .social__wrapper {

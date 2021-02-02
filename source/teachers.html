@@ -111,31 +111,238 @@
     <div class="courses__search">
       <form class="courses__search-form" method="get" action="#">
         <label class="visually-hidden" for="search">Поиск</label>
-        <input class="courses__search-field" type="text" name="search" id="search" placeholder="Поиск">
-        <button class="courses__search-button" type="submit" aria-label="Найти"></button>
+        <input class="courses__search-field" type="text" name="search" id="search" placeholder="Найдите преподавателя">
+        <button class="courses__search-button courses__search-button--teachers" type="submit" aria-label="Найти
+        преподавателя">
+        </button>
       </form>
     </div>
     <ul class="teachers__list list">
-      <li class="teachers__item teachers__item--1">Мокрое валяние
-        <a class="teachers__link" href="wetfelting.html"></a>
+      <li class="teachers__item">
+        <div class="teachers-item__image-wrapper">
+          <picture>
+<!--            <source type="image/webp" srcset="/img/.webp 1x, /img/.webp 2x">-->
+            <img class="teachers-item__image" src="/img/demyanova.jpg" alt="Фото преподавателя">
+          </picture>
+        </div>
+        <div class="teachers__wrapper">
+          <p class="teachers__name"><b>Ольга Демьянова</b></p>
+          <p class="teachers__title">Мастер-профессионал с опытом преподавания более 8 лет</p>
+        </div>
+        <div class="teachers__link-wrapper">
+          <div class="teachers__social social social--teachers visually-hidden">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="#">
+                  <span class="visually-hidden">Страница в Инстаграмм</span>
+                  <svg class="social__icon social__icon--insta" width="30" height="30" viewBox="0 0 31 30">
+                    <use xlink:href="img/sprite.svg#sp-icon-insta"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--email" href="#">
+                  <span class="visually-hidden">Написать e-mail</span>
+                  <svg class="social__icon social__icon--email" width="30" height="30" viewBox="0 0 30 30">
+                    <use xlink:href="img/sprite.svg#sp-icon-email"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="#">
+                  <span class="visually-hidden">Страница Вконтакте</span>
+                  <svg class="social__icon social__icon--vk" width="30" height="30" viewBox="0 0 31 30">
+                    <use xlink:href="img/sprite.svg#sp-icon-vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="#">
+                  <span class="visually-hidden">Страница на Фейсбуке</span>
+                  <svg class="social__icon social__icon--fb" width="30" height="30" viewBox="0 0 31 30">
+                    <use xlink:href="img/sprite.svg#sp-icon-fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--yam" href="#">
+                  <span class="visually-hidden">Страница на Ярмарке Мастеров</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a class="teachers__link" href="#">Подробнее</a>
+        </div>
       </li>
-      <li class="teachers__item teachers__item--2">Сухое валяние
-        <a class="teachers__link" href=""></a>
+      <li class="teachers__item">
+        <div class="teachers-item__image-wrapper">
+          <picture>
+            <!--            <source type="image/webp" srcset="/img/.webp 1x, /img/.webp 2x">-->
+            <img class="teachers-item__image" src="/img/dol.jpg" alt="Фото преподавателя">
+          </picture>
+        </div>
+        <div class="teachers__wrapper">
+          <p class="teachers__name"><b>Елена Дол</b></p>
+          <p class="teachers__title">Профессиональный художник, работает с войлоком более 5 лет</p>
+        </div>
+        <div class="teachers__link-wrapper">
+          <div class="teachers__social social social--teachers">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--insta" href="#">
+                  <span class="visually-hidden">Страница в Инстаграмм</span>
+                  <svg class="social__icon social__icon--insta" width="30" height="30" viewBox="0 0 31 30">
+                    <use xlink:href="img/sprite.svg#sp-icon-insta"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--email" href="#">
+                  <span class="visually-hidden">Написать e-mail</span>
+                  <svg class="social__icon social__icon--email" width="30" height="30" viewBox="0 0 30 30">
+                    <use xlink:href="img/sprite.svg#sp-icon-email"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item visually-hidden">
+                <a class="social__link social__link--vkontakte" href="#">
+                  <span class="visually-hidden">Страница Вконтакте</span>
+                  <svg class="social__icon social__icon--vk" width="30" height="30" viewBox="0 0 31 30">
+                    <use xlink:href="img/sprite.svg#sp-icon-vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item visually-hidden">
+                <a class="social__link social__link--facebook" href="#">
+                  <span class="visually-hidden">Страница на Фейсбуке</span>
+                  <svg class="social__icon social__icon--fb" width="30" height="30" viewBox="0 0 31 30">
+                    <use xlink:href="img/sprite.svg#sp-icon-fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--yam" href="#">
+                  <span class="visually-hidden">Страница на Ярмарке Мастеров</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a class="teachers__link" href="dol.html">Подробнее</a>
+        </div>
       </li>
-      <li class="teachers__item teachers__item--3">Крашение шерсти и шелка
-        <a class="teachers__link" href="#"></a>
+      <li class="teachers__item">
+        <div class="teachers-item__image-wrapper">
+          <picture>
+            <!--            <source type="image/webp" srcset="/img/.webp 1x, /img/.webp 2x">-->
+            <img class="teachers-item__image" src="/img/nechaykina.jpg" alt="Фото преподавателя">
+          </picture>
+        </div>
+        <div class="teachers__wrapper">
+          <p class="teachers__name"><b>Юлия Нечайкина</b></p>
+          <p class="teachers__title">Мастер-универсал, опыт валяния из шерсти - более 7 лет</p>
+        </div>
+        <div class="teachers__link-wrapper">
+          <div class="teachers__social social social--teachers">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="#">
+                  <span class="visually-hidden">Страница в Инстаграмм</span>
+                  <svg class="social__icon social__icon--insta" width="30" height="30" viewBox="0 0 31 30">
+                    <use xlink:href="img/sprite.svg#sp-icon-insta"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item visually-hidden">
+                <a class="social__link social__link--email" href="#">
+                  <span class="visually-hidden">Написать e-mail</span>
+                  <svg class="social__icon social__icon--email" width="30" height="30" viewBox="0 0 30 30">
+                    <use xlink:href="img/sprite.svg#sp-icon-email"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item visually-hidden">
+                <a class="social__link social__link--vkontakte" href="#">
+                  <span class="visually-hidden">Страница Вконтакте</span>
+                  <svg class="social__icon social__icon--vk" width="30" height="30" viewBox="0 0 31 30">
+                    <use xlink:href="img/sprite.svg#sp-icon-vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item visually-hidden">
+                <a class="social__link social__link--facebook" href="#">
+                  <span class="visually-hidden">Страница на Фейсбуке</span>
+                  <svg class="social__icon social__icon--fb" width="30" height="30" viewBox="0 0 31 30">
+                    <use xlink:href="img/sprite.svg#sp-icon-fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item visually-hidden">
+                <a class="social__link social__link--yam" href="#">
+                  <span class="visually-hidden">Страница на Ярмарке Мастеров</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a class="teachers__link" href="#">Подробнее</a>
+        </div>
       </li>
-      <li class="teachers__item teachers__item--4">Фотография изделий ручной работы
-        <a class="teachers__link" href="#"></a>
-      </li>
-      <li class="teachers__item teachers__item--5">Работа с кожей
-        <a class="teachers__link" href="#"></a>
+      <li class="teachers__item">
+        <div class="teachers-item__image-wrapper">
+          <picture>
+            <!--            <source type="image/webp" srcset="/img/.webp 1x, /img/.webp 2x">-->
+            <img class="teachers-item__image" src="/img/suhoparova.jpg" alt="Фото преподавателя">
+          </picture>
+        </div>
+        <div class="teachers__wrapper">
+          <p class="teachers__name"><b>Татьяна Сухопарова</b></p>
+          <p class="teachers__title">Мастер-универсал, специализация - нуно-войлок</p>
+        </div>
+        <div class="teachers__link-wrapper">
+          <div class="teachers__social social social--teachers">
+            <ul class="social__list">
+              <li class="social__item visually-hidden">
+                <a class="social__link social__link--vkontakte" href="#">
+                  <span class="visually-hidden">Страница в Инстаграмм</span>
+                  <svg class="social__icon social__icon--insta" width="30" height="30" viewBox="0 0 31 30">
+                    <use xlink:href="img/sprite.svg#sp-icon-insta"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--email" href="#">
+                  <span class="visually-hidden">Написать e-mail</span>
+                  <svg class="social__icon social__icon--email" width="30" height="30" viewBox="0 0 30 30">
+                    <use xlink:href="img/sprite.svg#sp-icon-email"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="#">
+                  <span class="visually-hidden">Страница Вконтакте</span>
+                  <svg class="social__icon social__icon--vk" width="30" height="30" viewBox="0 0 31 30">
+                    <use xlink:href="img/sprite.svg#sp-icon-vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="#">
+                  <span class="visually-hidden">Страница на Фейсбуке</span>
+                  <svg class="social__icon social__icon--fb" width="30" height="30" viewBox="0 0 31 30">
+                    <use xlink:href="img/sprite.svg#sp-icon-fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item visually-hidden">
+                <a class="social__link social__link--yam" href="#">
+                  <span class="visually-hidden">Страница на Ярмарке Мастеров</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a class="teachers__link" href="#">Подробнее</a>
+        </div>
       </li>
   </ul>
-    <p class="allcourses__text">Видео-курсы, мастер-классы и уроки нашей онлайн школы созданы ведущими мастерами, поэтому вы сможете быстро и без
-      ошибок достичь результата. Мы постоянно пополняем нашу библиотеку, чтобы Вы могли найти для себя самые интересные
-      и новые технологии, приёмы и совершенствоваться в любимом рукоделии в любой точке мира!</p>
-    <p class="allcourses__text">Если Вы не нашли подходящий курс, напишите нам! Мы постараемся выполнить Ваш запрос!</p>
   </div>
 </main>
 

@@ -205,7 +205,6 @@
     opacity: 70%;
 }
 
-
 .catalog-item__price-block-title {
   @include margin-reset;
   padding: 10px 0;
@@ -248,15 +247,16 @@
   font-size: 11px;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 440px) {
   .catalog-item {
     width: 45%;
+    margin-right: 20px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .catalog-item {
-    width: 30%;
+    width: 29%;
   }
 
   .catalog-item__price-wrapper .catalog-item__price,
