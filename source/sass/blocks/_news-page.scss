@@ -31,12 +31,12 @@
   position: relative;
 }
 
-.news-page__images {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin: 0;
-  width: 100%;
-}
+//.news-page__images {
+//  display: grid;
+//  grid-template-columns: 1fr;
+//  margin: 0;
+//  width: 100%;
+//}
 
 .news-page__image-wrapper {
   width: 100%;
@@ -204,7 +204,7 @@
   //}
 
   .news-page--usefull {
-    padding-top: 70px;
+    padding-top: 10px;
     width: 65%;
     flex-grow: 1;
   }

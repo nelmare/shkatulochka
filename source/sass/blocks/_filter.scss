@@ -24,8 +24,6 @@
   border-radius: 5px;
 }
 
-
-
 .filter__link-item {
   border-bottom: 1px solid $sand;
   width: 100%;
@@ -60,11 +58,6 @@
   font-weight: 600;
 }
 
-
-
-
-
-
 .filter__list-item {
   padding: 10px 30px;
   margin-bottom: 0;
@@ -80,7 +73,8 @@
 
 .filter__link:hover,
 .filter__link:focus,
-.filter__link:active {
+.filter__link:active,
+.filter__link--active {
   color: $brown;
 }
 
@@ -168,7 +162,7 @@
   }
 
   .filter__list-item {
-    padding-left: 20px;
+    padding-left: 0;
     font-size: 15px;
   }
 
