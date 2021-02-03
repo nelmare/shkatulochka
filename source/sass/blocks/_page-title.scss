@@ -44,7 +44,7 @@
 @media (min-width: $tablet-width) {
   .page-title {
     height: 400px;
-    padding: 0 0 115px 90px;
+    padding: 0 0 70px 90px;
     font-size: 55px;
   }
 }
@@ -60,13 +60,13 @@
   .page-title {
     height: 610px;
     font-size: 95px;
-    padding: 0 0 180px 90px;
+    padding: 0 0 100px 90px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-title {
-    padding: 0 0 180px 165px;
+    padding: 0 0 100px 165px;
     font-size: 110px;
     max-width: 1500px;
     margin: 0 auto;

@@ -10,6 +10,10 @@
   max-width: 1354px;
 }
 
+.news-page--usefull {
+  padding-top: 30px;
+}
+
 .news-page__list {
   @include margin-reset;
   list-style: none;
@@ -87,12 +91,28 @@
 .news-page h2 {
   @include margin-reset;
   font-family: Museo Cyrl, "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36px;
+  color: $dark-blue;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.news-page h3 {
+  @include margin-reset;
+  font-family: Museo Cyrl, "Arial", sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 26px;
   color: $dark-blue;
   text-align: left;
   margin-bottom: 10px;
+}
+
+.news-page__page-title {
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .news-page p {
@@ -183,7 +203,19 @@
   //  padding-bottom: 65px;
   //}
 
+  .news-page--usefull {
+    padding-top: 70px;
+    width: 65%;
+    flex-grow: 1;
+  }
+
   .news-page h2 {
+    font-size: 32px;
+    line-height: 37px;
+    text-align: left;
+  }
+
+  .news-page h3 {
     font-size: 22px;
     line-height: 30px;
     margin-bottom: 20px;
@@ -202,13 +234,17 @@
 }
 
 @media (min-width: $laptop-width) {
-  .news-page--usefull .news-page__image-wrapper {
-    height: 14vw;
-  }
+  //.news-page--usefull .news-page__image-wrapper {
+  //  height: 14vw;
+  //}
 }
 
 @media (min-width: $xlaptop-width) {
   .news-page h2 {
+    margin-bottom: 30px;
+  }
+
+  .news-page h3 {
     font-size: 26px;
     line-height: 36px;
     margin-bottom: 30px;
