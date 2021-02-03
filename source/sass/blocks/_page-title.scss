@@ -37,6 +37,10 @@
   background-image: url("../img/teachers-title.jpg");
 }
 
+.page-title--usefull {
+  background-image: url("../img/usefull-title.jpg");
+}
+
 @media (min-width: $tablet-width) {
   .page-title {
     height: 400px;

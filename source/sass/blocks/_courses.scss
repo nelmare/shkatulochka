@@ -158,6 +158,10 @@
   margin-right: 10px;
 }
 
+.courses .news-page {
+  padding: 30px 0;
+}
+
 @media (min-width: 440px) {
   .courses__catalog {
     justify-content: space-around;
@@ -188,6 +192,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+  }
+
+  .courses__usefull {
+    width: 65%;
   }
 
   .courses--teachers {
@@ -231,3 +239,4 @@
     margin-left: auto;
   }
 }
+

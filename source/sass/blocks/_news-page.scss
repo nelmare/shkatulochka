@@ -22,13 +22,23 @@
 
 .news-page__card {
   margin-bottom: 30px;
-  max-width: 600px;
+  width: 100%;
+  max-width: 500px;
   position: relative;
+}
+
+.news-page__images {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0;
+  width: 100%;
 }
 
 .news-page__image-wrapper {
   width: 100%;
-  height: 50vw;
+  //height: 50vw;
+  height: 0;
+  padding-bottom: 56.25%;
   position: relative;
   margin-bottom: 20px;
 }
@@ -61,11 +71,17 @@
 
 
 .news-page__image {
-  display: block;
-  background-color: rgb(240,240,240);
+  //display: block;
+  //background-color: rgb(240,240,240);
+  //width: 100%;
+  //height: 100%;
+  //object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  border: none;
 }
 
 .news-page h2 {
@@ -122,22 +138,22 @@
 }
 
 @media (min-width: 420px) {
-  .news-page__image-wrapper {
-    height: 51vw;
-  }
+  //.news-page__image-wrapper {
+  //  height: 51vw;
+  //}
 }
 
 @media (min-width: 520px) {
-  .news-page__image-wrapper {
-    height: 52vw;
-  }
+  //.news-page__image-wrapper {
+  //  height: 52vw;
+  //}
 }
 
 @media (min-width: 640px) {
-  .news-page__image-wrapper {
-    //width: 600px;
-    height: 335px;
-  }
+  //.news-page__image-wrapper {
+  //  //width: 600px;
+  //  height: 335px;
+  //}
 }
 
 @media (min-width: $tablet-width) {
@@ -156,9 +172,9 @@
     max-width: 48%;
   }
 
-  .news-page__image-wrapper {
-    height: 21vw;
-  }
+  //.news-page__image-wrapper {
+  //  height: 21vw;
+  //}
 }
 
 @media (min-width: $laptop-width) {
@@ -180,8 +196,14 @@
 }
 
 @media (min-width: 920px) {
-  .news-page__image-wrapper {
-    height: 22vw;
+  //.news-page__image-wrapper {
+  //  height: 22vw;
+  //}
+}
+
+@media (min-width: $laptop-width) {
+  .news-page--usefull .news-page__image-wrapper {
+    height: 14vw;
   }
 }
 
@@ -216,15 +238,15 @@
 }
 
 @media (min-width: 1130px) {
-  .news-page__image-wrapper {
-    height: 23vw;
-  }
+  //.news-page__image-wrapper {
+  //  height: 23vw;
+  //}
 }
 
 @media (min-width: 1490px) {
-  .news-page__image-wrapper {
-    height: 24vw;
-  }
+  //.news-page__image-wrapper {
+  //  height: 24vw;
+  //}
 }
 
 @media (min-width: $desktop-width) {
@@ -233,7 +255,7 @@
   //  line-height: 32px;
   //}
 
-  .news-page__image-wrapper {
-    height: 21vw;
-  }
+  //.news-page__image-wrapper {
+  //  height: 21vw;
+  //}
 }
