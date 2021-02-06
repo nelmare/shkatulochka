@@ -37,6 +37,7 @@
   padding-bottom: 40px;
 }
 
+
 .inner-page p {
   @include margin-reset;
   font-size: 14px;
@@ -47,6 +48,10 @@
 
 .inner-column {
   padding: 35px 0 0 0;
+}
+
+.inner-column:first-child {
+  padding-top: 0;
 }
 
 .inner-content img {

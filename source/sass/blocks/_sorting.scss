@@ -15,6 +15,10 @@
   color: $blue;
   //border: none;
   background-color: $white;
+  display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 @media (min-width: $tablet-width) {
