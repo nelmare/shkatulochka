@@ -41,6 +41,14 @@
   background-image: url("../img/usefull-title.jpg");
 }
 
+.page-title--reviews {
+  background-image: url("../img/reviews-title.jpg");
+}
+
+.page-title--contacts {
+  background-image: url("../img/contacts-title.jpg");
+}
+
 @media (min-width: $tablet-width) {
   .page-title {
     height: 400px;

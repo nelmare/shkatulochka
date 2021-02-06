@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="utf-8">
+  <title>Shkatulochka</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+  <script src="js/picturefill.js"></script>
+  <script src="js/svg4everybody.js"></script>
+</head>
+<body class="">
+<div style="display:none">
+  <include src="build/img/sprite.svg"></include>
+</div>
+<header class="page-header">
+  <div class="page-header__container container">
+    <div class="page-header__logo-wrapper">
+      <a class="page-header__logo" href="index2.html">
+        <picture>
+          <source media="(min-width: 1500px)" srcset="/img/logo-header-desktop@1x.png, /img/logo-header-desktop@2x.png 2x">
+          <source media="(min-width: 992px)" srcset="/img/logo-header-mobile2@1x.png, /img/logo-header-mobile2@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="/img/logo-header-desktop@1x.png, /img/logo-header-desktop@2x.png 2x">
+          <img class="page-header__logo-image" src="/img/logo-header-mobile2@1x.png" srcset="/img/logo-header-mobile2@2x.png 2x"
+               alt="Логотип Шкатулочки">
+        </picture>
+      </a>
+      <a href="index2.html" class="page-header__title page-header__title--variant">Онлайн-школа современного войлока</a>
+    </div>
+  </div>
+  <nav class="main-nav container">
+    <button class="main-nav__toggle main-nav__toggle--nojs" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <ul class="main-nav__list main-nav__list--nojs site-list">
+      <li class="main-nav__item">
+        <ul class="site-list__wrapper">
+          <li class="site-list__item site-list__item--menu">
+            <a class="site-list__link" href="index2.html">Главная</a>
+          </li>
+          <li class="site-list__item site-list__item--menu">
+            <a class="site-list__link" href="about.html">О нас</a>
+          </li>
+          <li class="site-list__item site-list__item--menu">
+            <a class="site-list__link" href="news.html">Новости</a>
+          </li>
+          <li class="site-list__item site-list__item--menu">
+            <a class="site-list__link site-list__link--active" href="#">Курсы</a>
+            <ul class="site-list__menu-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="allcourses.html">Все курсы</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="wetfelting.html">Мокрое валяние</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="dryfelting.html">Сухое валяние</a>
+              </li>
+            </ul>
+          </li>
+          <li class="site-list__item site-list__item--menu">
+            <a class="site-list__link" href="teachers.html">Преподаватели</a>
+          </li>
+          <li class="site-list__item site-list__item--menu">
+            <a class="site-list__link" href="usefull.html">Полезности</a>
+          </li>
+          <li class="site-list__item site-list__item--menu">
+            <a class="site-list__link" href="free.html">Бесплатно</a>
+          </li>
+          <li class="site-list__item site-list__item--menu">
+            <a class="site-list__link" href="reviews.html">Отзывы</a>
+          </li>
+          <li class="site-list__item site-list__item--menu">
+            <a class="site-list__link" href="contacts.html">Контакты</a>
+          </li>
+          <li class="site-list__item site-list__item--user">
+            <ul class="user-list">
+              <li class="user-list__item user-list__item--login">
+                <a href="#" class="user-list__link user-list__link--login">
+                  <span class="user-list__link-line"></span>Вход в личный кабинет
+                </a>
+              </li>
+              <li class="user-list__item user-list__item--contacts">
+                <ul class="contacts-list contacts-list--header">
+                  <li class="contacts-list__item">
+                    <a class="contacts-list__phone contacts-list__phone--header" href="tel:+7-985-480-77-40">8-985-480-77-40</a>
+                  </li>
+                  <li class="contacts-list__item">
+                    <a class="contacts-list__link" href="#">Заказать звонок</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="site-list__item place">
+            <ul class="place__list">
+              <li class="place__item">
+                <button class="place__button" type="button">Москва</button>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <h1 class="page-title page-title--reviews">Отзывы</h1>
+  <div class="course container">
+    <div class="course__tabs-wrapper">
+      <div class="course__tabs">
+        <button class="course__tablink course__tablink--active" onclick="openTab(event, 'dryfelting')" id="defaultOpen">Сухое валяние</button>
+        <button class="course__tablink" onclick="openTab(event, 'wetfelting')">Мокрое валяние</button>
+      </div>
+      <div class="course__tabcontent"  id="dryfelting">
+        <section class="course__review review">
+          <h3 class="review__title course__title">Отзывы</h3>
+          <div class="review__wrapper">
+            <p class="review__author">Анна</p>
+            <p class="review__theme">Легкое платье "Когда двое встречаются"</p>
+            <p class="review__teacher">Преподаватель: Байба Редере</p>
+            <div class="review__block">
+              <div class="review__rating">
+                <span class="review__rating-item"></span>
+                <span class="review__rating-item"></span>
+                <span class="review__rating-item"></span>
+                <span class="review__rating-item"></span>
+                <span class="review__rating-item"></span>
+              </div>
+              <p class="review__text">Спасибо мастеру за оригинальную и несложную, но такую эффектную технику! Сочетание нежного шелка и
+                послушного префельта - и в итоге получаем волшебную праздничную вещь, достойную самой королевы! Очень
+                понравилось, уже распирает от идей лёгких топиков и сарафанов!</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="course__tabcontent" id="wetfelting">
+        <section class="course__review review">
+          <h3 class="review__title course__title">Отзывы</h3>
+          <div class="review__wrapper">
+            <p class="review__author">Марина</p>
+            <p class="review__theme">Весенний браслет с фиалками</p>
+            <p class="review__teacher">Преподаватель: Елена Дол</p>
+            <div class="review__block">
+              <div class="review__rating">
+                <span class="review__rating-item"></span>
+                <span class="review__rating-item"></span>
+                <span class="review__rating-item"></span>
+                <span class="review__rating-item"></span>
+                <span class="review__rating-item"></span>
+              </div>
+              <p class="review__text">Эмоции от общения - необыкновенные!, Теплая, мягкая атмосфера, которую создает
+                Елена! Спокойствие, доброжелательность, внимание в самых мелочах!!! Елена успевала помочь всем!
+                Результат - получились роскошные работы, а сколько красоты еще хочется сделать!!!.... да, немного устали,
+                но поймала себя на мысли, когда бежала домой, что вспоминаю зрительно каждый этап, движения - вот что
+                значит Учитель!!!</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="page-footer">
+  <div class="page-footer__container container">
+    <div class="page-footer__main-block">
+      <div class="page-footer__logo-wrapper">
+        <a class="page-footer__logo" href="index2.html">
+          <img class="page-footer__logo-image" src="/img/logo-footer-desktop@1x.png" srcset="img/logo-footer-desktop@2x.png 2x"
+               alt="Логотип Шкатулочки">
+        </a>
+        <a href="index2.html" class="page-footer__title">Школа современного войлока</a>
+      </div>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__column">
+          <ul class="page-footer__list contacts-list contacts-list--footer">
+            <li class="contacts-list__item">
+              <a class="contacts-list__phone contacts-list__phone--footer" href="tel:+7-985-480-77-40">8-985-480-77-40</a>
+            </li>
+            <li class="contacts-list__item">
+              <a class="contacts-list__link" href="#">Заказать звонок</a>
+            </li>
+          </ul>
+          <div>
+            <a class="page-footer__policy" href="#">Договор-оферта</a>
+            <a class="page-footer__policy" href="#"><span class="page-footer__line"></span>Политика конфиденциальности</a>
+          </div>
+        </div>
+        <div class="page-footer__column">
+          <ul class="page-footer__list nav-list">
+            <li class="nav-list__item nav-list__item--active">
+              <a class="nav-list__link" href="about.html">О нас</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="news.html">Новости</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="allcourses.html">Курсы</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="teachers.html">Преподаватели</a>
+            </li>
+          </ul>
+          <ul class="page-footer__list nav-list">
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="usefull.html">Полезности</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="free.html">Бесплатно</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="reviews.html">Отзывы</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer__copyright">
+    <div class="copyright container">
+      <p class="copyright__text">Шкатулочка. Все права защищены</p>
+      <a class="copyright__link" href="#"><span class="copyright__line"></span>Разработано с любовью в SEO Expert OÜ</a>
+    </div>
+  </div>
+</footer>
+<script src="js/burger.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.5.1.slim.js"
+  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+  crossorigin="anonymous"></script>
+<script src="js/filter-list.js"></script>
+<script src="js/video.js"></script>
+<script src="js/tabs.js"></script>
+<script>svg4everybody();</script>
+</body>
+</html>

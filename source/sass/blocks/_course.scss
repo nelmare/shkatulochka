@@ -135,6 +135,43 @@
   height: 25px;
 }
 
+.course__tabs {
+  //border-bottom: 1px solid $grey;
+  font-size: 0;
+}
+
+.course__tablink {
+  padding: 13px;
+  border: none;
+  border-bottom: 1px solid $light-grey;
+  background-color: $white;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  outline: none;
+}
+
+.course__tabs button.active {
+  //font-size: 10px;
+  //font-weight: 700;
+  //line-height: 12px;
+  color: $red;
+  border-bottom: 1px solid $dark-blue;
+  font-weight: 700;
+}
+
+.course__tabcontent {
+  padding: 25px 0 30px 0;
+  display: none;
+}
+
+.course__tabcontent .review {
+  border-radius: 7px;
+}
+
 @media (min-width: 640px) {
   .course__beginning {
     display: grid;
@@ -189,8 +226,11 @@
       max-width: 1020px;
       margin: 0 auto;
     }
-  }
 
+    .course__tablink {
+      padding: 25px;
+    }
+  }
 
   @media (min-width: $laptop-width) {
     .course__main-title {
