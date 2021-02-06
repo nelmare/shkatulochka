@@ -8,7 +8,7 @@
   <script src="js/picturefill.js"></script>
   <script src="js/svg4everybody.js"></script>
 </head>
-<body class="">
+<body class="inner-page">
 <div style="display:none">
   <include src="build/img/sprite.svg"></include>
 </div>
@@ -47,7 +47,7 @@
             <a class="site-list__link site-list__link--active" href="#">Курсы</a>
             <ul class="site-list__menu-list">
               <li class="site-list__item">
-                <a class="site-list__link" href="courses.html">Все курсы</a>
+                <a class="site-list__link" href="allcourses.html">Все курсы</a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__link" href="wetfelting.html">Мокрое валяние</a>
@@ -103,69 +103,60 @@
     </ul>
   </nav>
 </header>
-<main>
-  <div class="news-page container news-page--post">
-    <div class="course__breadcrumbs breadcrumbs">
-      <ul class="breadcrumbs__list">
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="index2.html">Главная</a>
-        </li>
-        <li class="breadcrumbs__item breadcrumbs__item--slash">
-          <span class="breadcrumbs__slash">/</span>
-        </li>
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="usefull.html">Полезности</a>
-        </li>
-        <li class="breadcrumbs__item breadcrumbs__item--slash">
-          <span class="breadcrumbs__slash">/</span>
-        </li>
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="usefull.html">Видеозаписи трансляций</a>
-        </li>
-        <li class="breadcrumbs__item breadcrumbs__item--slash">
-          <span class="breadcrumbs__slash">/</span>
-        </li>
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="video-item.html">Интенсив по сухому валянию "Глаза - зеркало души"</a>
-        </li>
-      </ul>
-    </div>
-    <div class="news-post">
-      <h2 class="course__main-title">Интенсив по сухому валянию "Глаза - зеркало души" - бесплатная встреча 23 января 2021</h2>
-      <div class="video__wrapper video__wrapper--full">
-        <div></div>
-        <div class="video">
-          <iframe class="video__embed" width="512" height="288" src="https://www.youtube.com/embed/egPB-sHJtAk"></iframe>
+<main class="container">
+  <div class="inner-page-container">
+    <ul class="breadcrumbs">
+      <li>
+        <a href="index2.html">Главная</a>
+      </li>
+      <li>
+        <a href="news.html">Полезности</a>
+      </li>
+      <li>
+        <a class="breadcrumbs__link" href="news-post1.html">Видеозаписи трансляций</a>
+      </li>
+      <li>
+        <a class="breadcrumbs__link" href="news-post1.html">Интенсив по сухому валянию</a>
+      </li>
+    </ul>
+    <h1>Интенсив по сухому валянию "Глаза - зеркало души"</h1>
+  </div>
+  <section class="inner-content">
+    <section class="inner-column">
+      <div class="video__wrapper">
+        <div>
+          <iframe width="512" height="288" src="https://www.youtube.com/embed/egPB-sHJtAk"></iframe>
         </div>
-        <div></div>
       </div>
+    </section>
+    <section class="inner-column">
       <p>Наши мастера подготовили вам <b>подарки-бонусы:</b></p>
       <ul class="list">
-        <li class="list__item news-post__item">Чек-лист по созданию персонажа от Светланы Оспищевой: <a href="#">скачать</a></li>
-        <li class="list__item news-post__item">Схема построения глаз на примере смайлика: <a href="#">скачать</a></li>
-        <li class="list__item news-post__item">Инструкция "Как определить качество войлока" от Юлии Нечайкиной: <a href="#">скачать</a></li>
-        <li class="list__item news-post__item">Список выставок от Маруси Новокрещеновой: <a href="#">скачать</a></li>
-        <li class="list__item news-post__item">Видео МК по смайлику от Светланы Оспищевой:
-          <div class="video__wrapper video__wrapper--full">
-            <div></div>
-            <div class="video">
-              <iframe class="video__embed" width="512" height="288" src="https://www.youtube.com/embed/Bxk0YG_I3Ok"></iframe>
+        <li class="list__item">Чек-лист по созданию персонажа от Светланы Оспищевой: <a href="#">скачать</a></li>
+        <li class="list__item">Схема построения глаз на примере смайлика: <a href="#">скачать</a></li>
+        <li class="list__item">Инструкция "Как определить качество войлока" от Юлии Нечайкиной: <a href="#">скачать</a></li>
+        <li class="list__item">Список выставок от Маруси Новокрещеновой: <a href="#">скачать</a></li>
+        <li class="list__item">Видео МК по смайлику от Светланы Оспищевой:
+          <div class="video__wrapper">
+            <div>
+              <iframe width="512" height="288" src="https://www.youtube.com/embed/Bxk0YG_I3Ok"></iframe>
             </div>
-            <div></div>
           </div>
         </li>
         <li class="list__item news-post__item">Видео МК по валянию мышонка:
-          <div class="video__wrapper video__wrapper--full">
-            <div></div>
-            <div class="video">
-              <iframe class="video__embed" width="512" height="288" src="https://www.youtube.com/embed/A14w3N9pGEg"></iframe>
+          <div class="video__wrapper">
+            <div>
+              <iframe width="512" height="288" src="https://www.youtube.com/embed/A14w3N9pGEg"></iframe>
             </div>
-            <div></div>
           </div>
         </li>
       </ul>
+    </section>
+    <div class="post-footer">
+      <time datetime="2021-01-23">07.01.2021</time>
+      <span>трансляции</span>
     </div>
-  </div>
+  </section>
 </main>
 
 <footer class="page-footer">
@@ -202,7 +193,7 @@
               <a class="nav-list__link" href="news.html">Новости</a>
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link" href="courses.html">Курсы</a>
+              <a class="nav-list__link" href="allcourses.html">Курсы</a>
             </li>
             <li class="nav-list__item">
               <a class="nav-list__link" href="teachers.html">Преподаватели</a>

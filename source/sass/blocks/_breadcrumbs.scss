@@ -1,8 +1,4 @@
-//.breadcrumbs {
-//  margin-bottom: 20px;
-//}
-
-.breadcrumbs__list {
+.breadcrumbs {
   @include margin-reset;
   list-style: none;
   display: flex;
@@ -10,45 +6,61 @@
   flex-wrap: wrap;
 }
 
-.breadcrumbs__item {
-  margin-bottom: 10px;
+.breadcrumbs li {
+  margin: 0 30px 10px 0;
+  position: relative;
 }
 
-.breadcrumbs__link {
-  font-size: 13px;
+.breadcrumbs a {
+  font-size: 14px;
   font-weight: 300;
-  line-height: 18px;
+  line-height: 22px;
   color: inherit;
   text-decoration: none;
   text-transform: none;
   cursor: pointer;
 }
 
-.breadcrumbs__link:hover,
-.breadcrumbs__link:focus {
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
   color: $brown;
 }
 
-.breadcrumbs__slash {
+.breadcrumbs li:after {
+  content: "/";
+  display: inline-block;
+  width: 25px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -35px;
+}
+
+.breadcrumbs-slash {
   margin: 0 5px;
   color: $red;
 }
 
+.breadcrumbs li:last-child {
+  margin-right: 0;
+}
+
+.breadcrumbs li:last-child:after {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
-  .breadcrumbs__link {
+  .breadcrumbs a {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-  }
-
-  .breadcrumbs {
-    margin-bottom: 15px;
   }
 }
 
 @media (min-width: $laptop-width) {
   .breadcrumbs {
-    display: block;
+    //display: block;
     width: 100%;
     flex-grow: 1;
   }

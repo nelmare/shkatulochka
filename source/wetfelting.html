@@ -47,7 +47,7 @@
             <a class="site-list__link site-list__link--active" href="#">Курсы</a>
             <ul class="site-list__menu-list">
               <li class="site-list__item">
-                <a class="site-list__link" href="courses.html">Все курсы</a>
+                <a class="site-list__link" href="allcourses.html">Все курсы</a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__link" href="wetfelting.html">Мокрое валяние</a>
@@ -106,25 +106,17 @@
 <main>
   <h1 class="page-title page-title--wetfelting">Мокрое валяние</h1>
   <div class="courses container">
-    <div class="courses__breadcrumbs breadcrumbs">
-      <ul class="breadcrumbs__list">
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="index2.html">Главная</a>
-        </li>
-        <li class="breadcrumbs__item breadcrumbs__item--slash">
-          <span class="breadcrumbs__slash">/</span>
-        </li>
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="courses.html">Курсы</a>
-        </li>
-        <li class="breadcrumbs__item breadcrumbs__item--slash">
-          <span class="breadcrumbs__slash">/</span>
-        </li>
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="wetfelting.html">Мокрое валяние</a>
-        </li>
-      </ul>
-    </div>
+    <ul class="courses__breadcrumbs breadcrumbs">
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="index2.html">Главная</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="allcourses.html">Курсы</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="wetfelting.html">Мокрое валяние</a>
+      </li>
+    </ul>
     <div class="courses__show">
       <div class="courses__search">
         <form class="courses__search-form" method="get" action="#">
@@ -249,7 +241,7 @@
           </ul>
 <!--        Класс .toast-show добавляется к блоку и элементам блока, чтобы показать сообщение о выбранных фильтрах и количестве найденных вариантов по-->
 <!--        фильтрам-->
-        <div class="course__toast toast toast-show">
+        <div class="courses__toast toast toast-show">
             <div class="toast__item-wrapper toast__number-wrapper">Найдено:
               <span class="toast__item toast__number">1</span>
             </div>
@@ -528,7 +520,7 @@
               <a class="nav-list__link" href="news.html">Новости</a>
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link" href="courses.html">Курсы</a>
+              <a class="nav-list__link" href="allcourses.html">Курсы</a>
             </li>
             <li class="nav-list__item">
               <a class="nav-list__link" href="teachers.html">Преподаватели</a>

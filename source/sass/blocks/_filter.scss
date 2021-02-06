@@ -97,6 +97,19 @@
   display: inline-block;
 }
 
+.filter--usefull .filter__title {
+  display: none;
+}
+
+.filter--usefull .filter__list {
+  display: block;
+}
+
+.filter--usefull .filter__main-list {
+  max-width: 50%;
+  display: block;
+}
+
 @media (max-width: 991px) {
   .filter__main-toggle--open {
     display: inline-block;

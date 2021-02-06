@@ -1,11 +1,11 @@
 .about h2 {
   @include margin-reset;
   font-family: Museo Cyrl, "Arial", sans-serif;
-  font-size: 26px;
+  font-size: 30px;
   font-weight: 500;
-  line-height: 36px;
+  line-height: 38px;
   color: $dark-blue;
-  text-align: center;
+  text-align: left;
   margin-bottom: 10px;
 }
 
@@ -38,9 +38,9 @@
 
 @media (min-width: $laptop-width) {
   .about h2 {
-    font-size: 28px;
-    text-align: left;
-  }
+    font-size: 35px;
+    line-height: 55px;
+    }
 
   .about h3 {
     font-size: 26px;
@@ -48,10 +48,6 @@
 }
 
 @media (min-width: $xlaptop-width) {
-  .about h2 {
-    font-size: 30px;
-  }
-
   .about h3 {
     font-size: 27px;
   }

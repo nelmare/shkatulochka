@@ -46,12 +46,16 @@
   @include margin-reset;
 }
 
+.review__title {
+  margin-bottom: 15px;
+}
+
 @media (min-width: $tablet-width) {
   .review__wrapper {
     font-size: 16px;
     line-height: 24px;
-    max-width: 1174px;
-    margin: 0 auto;
+    max-width: 1020px;
+    margin: 0 auto 0 auto;
   }
 
   .review {
@@ -59,8 +63,8 @@
   }
 
   .review__title {
-    max-width: 1174px;
-    margin: 0 auto;
+    max-width: 1020px;
+    margin: 0 0 15px auto;
   }
 }
 
@@ -69,8 +73,8 @@
     padding: 20px 165px 50px 165px;
   }
 
-  .review__wrapper,
-  .review__title {
-    max-width: 1024px;
-  }
+  //.review__wrapper,
+  //.review__title {
+  //  max-width: 1024px;
+  //}
 }
