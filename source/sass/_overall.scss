@@ -53,10 +53,6 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
 }
 
-input[type=text], input[type=submit], textarea {
-  -webkit-appearance: none;
-}
-
 @media (min-width: $tablet-width) {
   .container {
     padding: 0 90px;

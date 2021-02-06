@@ -58,12 +58,12 @@
   //border: none;
   //background-color: $sand;
   padding: 5px 15px;
+  border-radius: 0;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   border: 2px solid $sand;
   flex-grow: 1;
   font-size: 13px;
-  -webkit-appearance: none;
 }
 
 .courses__search-button {
