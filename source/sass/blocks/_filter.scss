@@ -97,7 +97,8 @@
   display: inline-block;
 }
 
-.filter--usefull .filter__title {
+.filter--usefull .filter__title,
+.filter--usefull .filter__link-item {
   display: none;
 }
 
@@ -109,6 +110,11 @@
   max-width: 50%;
   display: block;
 }
+
+.filter--usefull .filter__list-item {
+  padding-left: 0;
+}
+
 
 @media (max-width: 991px) {
   .filter__main-toggle--open {
@@ -185,6 +191,10 @@
 
   .filter__title {
     display: none;
+  }
+
+  .filter--usefull .filter__link-item {
+    display: block;
   }
 }
 
