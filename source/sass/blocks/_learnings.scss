@@ -17,7 +17,6 @@
 }
 
 .learnings__image-wrapper {
-  //min-width: 280px;
   max-width: 320px;
   margin: 0 15px 20px 0;
   background-color: $light-grey;
@@ -42,6 +41,7 @@
   content: "";
   background-image: url("../img/heart-list.svg");
   display: inline-block;
+  vertical-align: middle;
   width: 50px;
   height: 35px;
   position: absolute;

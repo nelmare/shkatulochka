@@ -8,6 +8,10 @@
   flex-direction: column-reverse;
 }
 
+.page-footer__logo {
+  cursor: pointer;
+}
+
 .page-footer__logo-wrapper {
   position: relative;
   width: 280px;
@@ -25,6 +29,8 @@
   bottom: 7px;
   right: 8px;
   display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
 }
 
 .page-footer__policy {
@@ -48,6 +54,10 @@
   top: 28px;
   left: 10px;
   display: block;
+}
+
+.page-footer__policy .page-footer__line--oferta {
+  width: 121px;
 }
 
 .page-footer__policy:hover,

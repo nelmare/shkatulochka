@@ -29,6 +29,7 @@
 .breadcrumbs li:after {
   content: "/";
   display: inline-block;
+  vertical-align: middle;
   width: 25px;
   height: 15px;
   position: absolute;
@@ -60,7 +61,6 @@
 
 @media (min-width: $laptop-width) {
   .breadcrumbs {
-    //display: block;
     width: 100%;
     flex-grow: 1;
   }

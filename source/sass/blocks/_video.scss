@@ -12,7 +12,8 @@
   background-color: #000000;
 }
 
-.video__wrapper iframe {
+.video__wrapper iframe,
+.video__embed {
   position: absolute;
   top: 0;
   left: 0;
@@ -75,23 +76,4 @@
     grid-template-columns: 0.7fr;
     margin: 30px 0;
   }
-
-  //.video__wrapper--full {
-  //  grid-template-columns: 1fr;
-  //  margin: 30px 0;
-  //}
 }
-
-//@media (min-width: $laptop-width) {
-  //.video__wrapper {
-  //  grid-template-columns: 0.7fr;
-  //}
-
-  //.video__wrapper--full {
-  //  //grid-template-columns: 0.1fr 1fr 0.1fr;
-  //  grid-template-columns: 1fr;
-  //
-  //}
-//}
-
-

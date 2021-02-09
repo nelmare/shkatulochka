@@ -14,37 +14,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
   position: relative;
-  //max-width: 630px;
 }
 
 .courses__search {
   width: 100%;
 }
-
-//.courses__search-call {
-//  //border: 2px solid $dark-red-brown;
-//  position: relative;
-//  background: $white;
-//  padding: 15px;
-//  border-radius: 5px;
-//  border: none;
-//}
-//
-//.courses__search-button:before {
-//  content: "";
-//  width: 100%;
-//  height: 100%;
-//  background-image: url("../img/search-icon.svg");
-//  position: absolute;
-//  top: 0;
-//  bottom: 0;
-//  left: 0;
-//  display: block;
-//  background-size: 80% 80%;
-//  background-repeat: no-repeat;
-//  background-position: center;
-//
-//}
 
 .courses__search-form {
   padding: 15px 0;
@@ -55,8 +29,6 @@
 
 .courses__search-field {
   background-color: $white;
-  //border: none;
-  //background-color: $sand;
   padding: 5px 15px;
   border-radius: 0;
   border-top-left-radius: 5px;
@@ -71,7 +43,6 @@
 .courses__search-button {
   border: none;
   background-color: $sand;
-  //padding: 5px 10px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   background-image: url("../img/search-icon.svg");
@@ -80,6 +51,7 @@
   background-position: center;
   width: 35px;
   height: 35px;
+  cursor: pointer;
 }
 
 .courses__search-button:hover,
@@ -92,8 +64,6 @@
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  //margin-left: -15px;
-  //margin-right: -15px;
   padding: 15px 0 0 0;
 }
 

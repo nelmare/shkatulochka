@@ -104,14 +104,13 @@
 
 @media (min-width: $tablet-width) {
   .write {
-    margin-bottom: 45px;
+    margin-bottom: 50px;
   }
 
   .write__title {
     font-size: 22px;
     line-height: 29px;
     width: 375px;
-    //margin-left: auto;
     margin-right: auto;
   }
 
@@ -145,12 +144,10 @@
 
 @media (min-width: $xlaptop-width) {
   .write {
-    margin-bottom: 65px;
     min-height: 280px;
   }
 
   .write__form-group--question {
     width: auto;
   }
-
 }

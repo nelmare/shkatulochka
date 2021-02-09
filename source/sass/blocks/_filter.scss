@@ -16,9 +16,8 @@
   line-height: 18px;
   cursor: pointer;
   text-decoration: none;
-  //border-bottom: 1px dashed $red;
   display: inline-block;
-  //margin-bottom: 30px;
+  vertical-align: middle;
   border: 1px solid $blue;
   padding: 7px 10px;
   border-radius: 5px;
@@ -54,7 +53,6 @@
 .filter__link-item:hover,
 .filter__link-item:focus,
 .filter__link-item:active {
-  //color: $brown;
   font-weight: 600;
 }
 
@@ -69,6 +67,7 @@
 .filter__link {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 .filter__link:hover,
@@ -95,6 +94,7 @@
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .filter--usefull .filter__title,
@@ -115,10 +115,10 @@
   padding-left: 0;
 }
 
-
 @media (max-width: 991px) {
   .filter__main-toggle--open {
     display: inline-block;
+    vertical-align: middle;
   }
 
   .filter__toggle--nojs {
@@ -152,17 +152,9 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-//.filter__title {
-//  font-size: 15px;
-//  line-height: 22px;
-//}
-}
-
 @media (min-width: $laptop-width) {
   .filter {
     background-color: $sand;
-    //position: absolute;
     padding: 15px;
     border-radius: 5px;
   }

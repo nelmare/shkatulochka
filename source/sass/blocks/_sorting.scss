@@ -13,12 +13,12 @@
   font-size: 13px;
   line-height: 18px;
   color: $blue;
-  //border: none;
   background-color: $white;
   display: block;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  //-webkit-appearance: none;
+  //-moz-appearance: none;
+  //appearance: none;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {

@@ -7,72 +7,6 @@
   padding: 0;
 }
 
-
-//.filter-item {
-//  position: relative;
-//
-//  font: inherit;
-//  font-weight: 400;
-//
-//  margin-bottom: 24px;
-//}
-//
-//.filter-item label {
-//  display: inline-block;
-//  vertical-align: middle;
-//
-//  padding-left: 40px;
-//
-//  text-align: left;
-//}
-//
-//
-//.filter-input-checkbox:checked ~ .checkbox-on {
-//  display: inline-block;
-//  vertical-align: middle;
-//
-//  position: absolute;
-//
-//  width: 27px;
-//  height: 23px;
-//
-//  left: 0px;
-//  cursor: pointer;
-//}
-//
-//.filter-input-checkbox:checked ~ .checkbox-off {
-//  display: none;
-//}
-//
-//.filter-input-checkbox ~ .checkbox-on {
-//  display: none;
-//}
-//
-//.filter-input-checkbox ~ .checkbox-off {
-//  display: inline-block;
-//  vertical-align: middle;
-//
-//  position: absolute;
-//
-//  width: 23px;
-//  height: 23px;
-//
-//  left: 0px;
-//  cursor: pointer;
-//}
-//
-//.checkbox input[type="checkbox"]:focus + .checkbox-on,
-//.checkbox input[type="checkbox"]:focus ~ .checkbox-off {
-//  outline: thin dotted;
-//  outline: 5px auto -webkit-focus-ring-color;
-//}
-//
-//.checkbox .filter-input-checkbox:disabled ~ .checkbox-off,
-//.checkbox .filter-input-checkbox:checked:disabled ~ .checkbox-on {
-//  fill: #6a6a6a;
-//}
-
-
 .price__marks {
   margin-bottom: 20px;
   display: flex;
@@ -169,6 +103,7 @@
   border: 2px solid $dark-sand;
   border-radius: 5px;
   background-color: $white;
+  cursor: pointer;
 }
 
 .price__button:hover,

@@ -49,21 +49,7 @@
 
 .teachers__wrapper {
   width: 64%;
-  //height: 100%;
-  //display: flex;
-  //flex-direction: column;
-  //align-items: flex-start;
-  //justify-content: space-between;
-  //flex-basis: 100%;
 }
-
-//.teachers__info {
-//  margin-bottom: auto;
-//  height: 80%;
-//  display: flex;
-//  align-self: flex-start;
-//  flex-direction: column;
-//}
 
 .teachers__name {
   @include margin-reset;
@@ -91,8 +77,6 @@
   border-bottom: 1px dashed $red;
   display: flex;
   justify-content: flex-end;
-  //margin-left: auto;
-  //width: 82px;
 }
 
 .teachers__link:hover,
@@ -102,20 +86,13 @@
   border-bottom: 1px dashed $brown;
 }
 
-
 .teachers__link-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
-  //height: 20%;
-  //align-self: flex-end;
-  //position: absolute;
   width: 65%;
-  //bottom: 0;
-  //right: 0;
-  //padding: 0 15px 15px 0;
   align-self: flex-end;
   margin-left: auto;
 }
@@ -180,14 +157,4 @@
     font-size: 20px;
     line-height: 32px;
   }
-
-  //.teachers__name {
-  //  font-size: 24px;
-  //  line-height: 28px;
-  //}
-  //
-  //.teachers__title {
-  //  font-size: 17px;
-  //  line-height: 27px;
-  //}
 }

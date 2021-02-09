@@ -1,0 +1,168 @@
+.account-page .page-header__container {
+  border-bottom: 1px solid $sand;
+}
+
+.account {
+  padding: 35px 0 40px;
+  width: 100%;
+  max-width: 660px;
+  margin: 0 auto;
+}
+
+.account__title {
+  @include margin-reset;
+  font-family: Museo Cyrl, "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36px;
+  color: $dark-blue;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.account__form-wrapper {
+  padding: 35px 30px 25px 30px;
+  background-color: $sand;
+  border-radius: 7px;
+}
+
+.account__block {
+  @include margin-reset;
+  border: none;
+  padding-bottom: 10px;
+}
+
+.account__form-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  align-items: center;
+  position: relative;
+}
+
+.account__label {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.account__line {
+  background-color: $white;
+  border-radius: 5px;
+  border: none;
+  height: 50px;
+  padding: 14px 15px;
+  margin: 0 0 10px 0;
+  width: 100%;
+}
+
+.account__invalid-feedback {
+  @include margin-reset;
+  padding-top: 10px;
+  color: $red;
+  text-transform: none;
+}
+
+.account__line--invalid {
+  border-bottom: 1px solid $red;
+}
+
+.account__button-wrapper {
+  width: 100%;
+}
+
+.account__button {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  background-color: $red-brown;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 15px;
+  color: $white;
+  margin: 0 auto;
+  min-width: 130px;
+  cursor: pointer;
+  display: block;
+}
+
+.account__button:hover,
+.account__button:focus,
+.account__button:active {
+  opacity: 70%;
+}
+
+.account__password-button {
+  width: 30px;
+  height: 30px;
+  background-color: $white;
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  border: none;
+  top: 40px;
+  right: 10px;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: center center;
+  cursor: pointer;
+}
+
+.account__password-button--show {
+  background-image: url("../img/icon-eye.svg");
+}
+
+.account__password-button--hide {
+  background-image: url("../img/eyeclosed.svg");
+}
+
+.account__link {
+  font: inherit;
+  color: $blue;
+  padding: 10px 0;
+  display: block;
+  cursor: pointer;
+  position: relative;
+}
+
+.account__link:hover,
+.account__link:focus,
+.account__link:active {
+  color: $brown;
+}
+
+@media (min-width: $tablet-width) {
+  .account {
+    padding: 45px 0 45px;
+  }
+
+  .account__title {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+
+@media (min-width: $xlaptop-width) {
+  .account {
+    padding: 55px 0 55px;
+  }
+
+  .account__title {
+    line-height: 50px;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .account {
+    padding: 65px 0 65px;
+  }
+
+  .account__title {
+    line-height: 55px;
+  }
+}

@@ -4,6 +4,10 @@
   position: relative;
 }
 
+.page-header__logo {
+  cursor: pointer;
+}
+
 .page-header__logo-wrapper {
   display: flex;
   flex-direction: column;
@@ -26,6 +30,7 @@
   color: $red-brown;
   text-decoration: none;
   display: inline-block;
+  vertical-align: middle;
   cursor: pointer;
 }
 

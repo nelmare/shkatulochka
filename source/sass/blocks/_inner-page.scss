@@ -37,7 +37,6 @@
   padding-bottom: 40px;
 }
 
-
 .inner-page p {
   @include margin-reset;
   font-size: 14px;
@@ -79,6 +78,7 @@
   background-color: $red;
   font-weight: bold;
   display: inline-block;
+  vertical-align: middle;
   width: 10px;
   height: 10px;
   border-radius: 50%;
