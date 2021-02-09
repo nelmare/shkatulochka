@@ -55,6 +55,7 @@
 
 .inner-content img {
   margin-bottom: 10px;
+  background-color: $light-grey;
 }
 
 .inner-column ul {
@@ -95,6 +96,12 @@
   border-bottom: 1px dashed $red;
 }
 
+.inner-column a:hover,
+.inner-column a:focus {
+  color: $brown;
+  border-bottom: 1px dashed $brown;
+}
+
 .inner-content .participation {
   padding: 15px;
   background-color: $sand;
@@ -119,6 +126,11 @@
   padding: 15px;
   color: $white;
   cursor: pointer;
+}
+
+.inner-content button:hover,
+.inner-content button:focus {
+  opacity: 70%;
 }
 
 .inner-content .post-email {
@@ -172,6 +184,10 @@
 }
 
 @media (min-width: $laptop-width) {
+  .inner-page .page-header__container {
+    border-bottom: none;
+  }
+
   .inner-column li {
     font-size: 15px;
   }

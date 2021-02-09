@@ -40,6 +40,8 @@
   height: 30%;
   max-height: 137px;
   margin: 0 15px 15px 0;
+  background-color: $light-grey;
+  border-radius: 50%;
 }
 
 .teachers-item__image {
@@ -128,10 +130,17 @@
   .teachers__item {
     width: 47%;
     margin-bottom: 30px;
+    padding-left: 0;
   }
 
   .teachers__list {
     padding-top: 20px;
+  }
+
+  .teachers-item__image-wrapper {
+    max-width: 123px;
+    max-height: 123px;
+    margin: 0 auto;
   }
 }
 

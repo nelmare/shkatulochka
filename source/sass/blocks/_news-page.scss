@@ -37,6 +37,8 @@
   padding-bottom: 56.25%;
   position: relative;
   margin-bottom: 20px;
+  border-radius: 7px;
+  background-color: $light-grey;
 }
 
 .news-page__image {
@@ -46,6 +48,7 @@
   width: 100%;
   height: 100%;
   border: none;
+  border-radius: 7px;
 }
 
 .news-page h2 {

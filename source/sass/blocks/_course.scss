@@ -15,24 +15,54 @@
   display: flex;
   justify-content: flex-start;
   background-color: $light-grey;
+  border-radius: 7px;
 }
 
 .course__image-wrapper--main {
   max-width: 540px;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
+  height: 58vw;
+  max-height: 350px;
+}
+
+.course__image-wrapper--main .course__image {
+  border-radius: 7px;
 }
 
 .course__beginning {
   padding-top: 30px;
 }
 
+.course__beginning--teacher {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
 .course__beginning--teacher .course__image-wrapper--main {
-  width: 100%;
-  margin-bottom: 20px;
+  width: 175px;
+  margin: 0 15px 20px 0;
+  height: 173px;
+  border-radius: 7px;
 }
 
 .course__beginning--teacher .course__image-wrapper--main .course__image {
   border-radius: 7px;
+}
+
+.course__beginning--teacher .course__main-info {
+  width: 280px;
+  flex-grow: 1;
+}
+
+.course__beginning--shop .course__image-wrapper--main {
+  width: 280px;
+  height: 206px;
+  margin-top: 0;
+}
+
+.course__beginning--shop .course__text {
+  margin: 15px 0;
 }
 
 .course__main-title {
@@ -154,6 +184,10 @@
   outline: none;
 }
 
+.course__tabs button:hover {
+  opacity: 70%;
+}
+
 .course__tabs button.active {
   color: $red;
   border-bottom: 1px solid $dark-blue;
@@ -183,13 +217,34 @@
     grid-gap: 40px;
   }
 
+  .course__beginning--shop {
+    margin: 0;
+  }
+
   .course__image-wrapper {
     max-width: 610px;
     margin: 20px auto 20px 0;
   }
 
+  .course__image-wrapper--main {
+    height: 30vw;
+    width: 100%;
+  }
+
   .course__beginning--teacher .course__image-wrapper--main {
     margin-top: 0;
+    width: 100%;
+    max-width: 346px;
+    height: 186px;
+  }
+
+  .course__beginning--teacher .course__main-info {
+    width: 100%;
+  }
+
+  .course__beginning--shop .course__image-wrapper--main {
+    margin-left: auto;
+    width: 100%;
   }
 }
 
@@ -218,6 +273,10 @@
     .course__tablink {
       padding: 25px;
     }
+
+    .course__image-wrapper--main {
+      height: 24vw;
+    }
   }
 
   @media (min-width: $laptop-width) {
@@ -240,4 +299,10 @@
       margin: 0 auto 30px auto;
     }
   }
+
+@media (min-width: $desktop-width) {
+  .course__image-wrapper--main {
+    height: 22vw;
+  }
+}
 

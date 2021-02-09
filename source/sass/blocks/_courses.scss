@@ -111,6 +111,11 @@
   align-items: center;
 }
 
+.courses__pagination-link:hover,
+.courses__pagination-link:focus {
+  color: $brown;
+}
+
 .courses__pagination-link--left {
   justify-content: flex-start;
   text-align: left;

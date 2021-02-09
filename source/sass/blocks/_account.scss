@@ -111,6 +111,11 @@
   background-size: 30px 30px;
   background-position: center center;
   cursor: pointer;
+  outline: none;
+}
+
+.account__password-button:hover {
+  opacity: 70%;
 }
 
 .account__password-button--show {
@@ -144,6 +149,12 @@
   .account__title {
     font-size: 35px;
     line-height: 45px;
+  }
+}
+
+@media (min-width: $laptop-width) {
+  .account-page .page-header__container {
+    border-bottom: none;
   }
 }
 
