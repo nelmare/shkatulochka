@@ -17,10 +17,14 @@
     <div class="page-header__logo-wrapper">
       <a class="page-header__logo" href="index.html">
         <picture>
-          <source media="(min-width: 1500px)" srcset="/img/logo-header-desktop@1x.png, /img/logo-header-desktop@2x.png 2x">
-          <source media="(min-width: 992px)" srcset="/img/logo-header-mobile2@1x.png, /img/logo-header-mobile2@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="/img/logo-header-desktop@1x.png, /img/logo-header-desktop@2x.png 2x">
-          <img class="page-header__logo-image" src="/img/logo-header-mobile2@1x.png" srcset="/img/logo-header-mobile2@2x.png 2x"
+          <source media="(min-width: 1500px)"
+                  srcset="/img/logo-header-desktop@1x.png, /img/logo-header-desktop@2x.png 2x">
+          <source media="(min-width: 992px)"
+                  srcset="/img/logo-header-mobile2@1x.png, /img/logo-header-mobile2@2x.png 2x">
+          <source media="(min-width: 768px)"
+                  srcset="/img/logo-header-desktop@1x.png, /img/logo-header-desktop@2x.png 2x">
+          <img class="page-header__logo-image" src="/img/logo-header-mobile2@1x.png"
+               srcset="/img/logo-header-mobile2@2x.png 2x"
                alt="Логотип Шкатулочки">
         </picture>
       </a>
@@ -105,32 +109,33 @@
 </header>
 <main>
   <div class="account container">
-      <h1 class="account__title container">Личный кабинет</h1>
-      <div class="account__form-wrapper">
-        <form class="account__form" action="#" method="post">
-          <fieldset class="account__block">
-            <div class="account__form-group">
-              <label class="account__label" for="order-email4">Ваш e-mail</label>
-              <input class="account__line" type="email" name="order-email1"
-                     id="order-email4" placeholder="Введите e-mail">
-              <p class="account__invalid-feedback">Введите верный адрес e-mail</p>
-            </div>
-            <div class="account__form-group">
-              <label class="account__label" for="password2">Пароль</label>
-              <input class="account__line" type="password" name="password"
-                     id="password2" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;">
-              <p class="account__invalid-feedback">Введите верный пароль</p>
-  <!--            класс .account__password-button-hide добавляет иконку закрытого глаза-->
-              <button class="account__password-button account__password-button--show" type="button" aria-label="Показать или скрыть пароль"></button>
-            </div>
-          </fieldset>
-          <div class="account__button-wrapper">
-          <button class="account__button" type="submit">Войти</button>
+    <h1 class="account__title container">Личный кабинет</h1>
+    <div class="account__form-wrapper">
+      <form class="account__form" action="#" method="post">
+        <fieldset class="account__block">
+          <div class="account__form-group">
+            <label class="account__label" for="order-email4">Ваш e-mail</label>
+            <input class="account__line" type="email" name="order-email1"
+                   id="order-email4" placeholder="Введите e-mail">
+            <p class="account__invalid-feedback">Введите верный адрес e-mail</p>
           </div>
-        </form>
-        <a class="account__link" href="#">Зарегистрироваться</a>
-        <a class="account__text account__link" href="#">Забыли пароль?</a>
-      </div>
+          <div class="account__form-group">
+            <label class="account__label" for="password2">Пароль</label>
+            <input class="account__line" type="password" name="password"
+                   id="password2" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;">
+            <p class="account__invalid-feedback">Введите верный пароль</p>
+            <!--            класс .account__password-button-hide добавляет иконку закрытого глаза-->
+            <button class="account__password-button account__password-button--show" type="button"
+                    aria-label="Показать или скрыть пароль"></button>
+          </div>
+        </fieldset>
+        <div class="account__button-wrapper">
+          <button class="account__button" type="submit">Войти</button>
+        </div>
+      </form>
+      <a class="account__link" href="#">Зарегистрироваться</a>
+      <a class="account__text account__link" href="#">Забыли пароль?</a>
+    </div>
   </div>
 </main>
 
@@ -139,7 +144,8 @@
     <div class="page-footer__main-block">
       <div class="page-footer__logo-wrapper">
         <a class="page-footer__logo" href="index.html">
-          <img class="page-footer__logo-image" src="/img/logo-footer-desktop@1x.png" srcset="img/logo-footer-desktop@2x.png 2x"
+          <img class="page-footer__logo-image" src="/img/logo-footer-desktop@1x.png"
+               srcset="img/logo-footer-desktop@2x.png 2x"
                alt="Логотип Шкатулочки">
         </a>
         <a href="index.html" class="page-footer__title">Школа современного войлока</a>
@@ -148,7 +154,8 @@
         <div class="page-footer__column">
           <ul class="page-footer__list contacts-list contacts-list--footer">
             <li class="contacts-list__item">
-              <a class="contacts-list__phone contacts-list__phone--footer" href="tel:+7-985-480-77-40">8-985-480-77-40</a>
+              <a class="contacts-list__phone contacts-list__phone--footer"
+                 href="tel:+7-985-480-77-40">8-985-480-77-40</a>
             </li>
             <li class="contacts-list__item">
               <a class="contacts-list__link" href="#">Заказать звонок</a>
@@ -156,7 +163,8 @@
           </ul>
           <div>
             <a class="page-footer__policy" href="#"><span class="page-footer__line page-footer__line--oferta"></span>Договор-оферта</a>
-            <a class="page-footer__policy" href="#"><span class="page-footer__line"></span>Политика конфиденциальности</a>
+            <a class="page-footer__policy" href="#"><span class="page-footer__line"></span>Политика
+              конфиденциальности</a>
           </div>
         </div>
         <div class="page-footer__column">
